@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex; 
+}
+
+.SDG14Image{
+    background-image: url('res/images/waterHomepage.jpg');
+    flex: 1 1 50%; 
+    min-height: 100vh; 
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.SDG15Image{
+    background-image: url('res/images/landHomepage.jpg');
+    flex: 1 1 50%; 
+    min-height: 100vh; 
+    background-repeat: no-repeat;
+    background-size: cover;  
+}
+
+.rectangleBlueHomepage, .rectangleGreenHomepage {
+    position: absolute;
+    top: 5%;
+    width: 45%;
+    height: 90%;
+}
+
+.rectangleBlueHomepage {
+    left: 2%;
+    background-color: rgba(48, 85, 137, 0.5); 
+    /* 
+    opacity: 0; 
+    transition: opacity 0.3s ease;
+    */
+}
+
+/*
+.SDG14Image:hover .rectangleBlueHomepage {
+    opacity: 1;  Show rectangle on hover 
+}
+*/
+
+.rectangleGreenHomepage {
+    right: 2%;
+    background-color: rgba(49,87,44, 0.5); 
+}
+
+.mainTitle {
+    text-align: center;
+    font-weight: 800;
+    color: white;
+    font-family: "Inter", sans-serif;
+    font-size: clamp(70px, 8vw, 100px);
+    margin-top: 10vh;
+}
+
+.subTitle {
+    text-align: center;
+    font-weight: 600;
+    color: white;
+    font-family: "Inter", sans-serif;
+    font-size: clamp(10px, 4vw, 50px);
+    margin-top: 2vh;
+}
