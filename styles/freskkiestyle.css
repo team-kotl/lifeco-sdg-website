@@ -18,11 +18,11 @@
 }
 
 .SDG14Image {
-    background-image: url('pictures/waterHomepage.jpg');
+    background-image: url('res/images/waterHomepage.jpg');
 }
 
 .SDG15Image {
-    background-image: url('pictures/landHomepage.jpg');
+    background-image: url('res/images/landHomepage.jpg');
 }
 
 .rectangleBlueHomepage, .rectangleGreenHomepage {
