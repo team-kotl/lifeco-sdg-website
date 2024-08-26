@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+}
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    color: white;
+    background-image: linear-gradient(rgba(0,0,0,0.40),rgba(0,0,0,0.40));
+}
+
+.sticky-nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    z-index: 1000;
+}
+
+.sticky-nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.sticky-nav ul li {
+    margin: 10px 20px 10px 0px;
+}
+
+.sticky-nav ul li a {
+    display: block;
+}
+
+.sticky-nav ul li a img {
+    width: auto;  
+    height: 50px;  
+    opacity: 0.5;
+    transition: opacity 0.3s ease;
+    object-fit: contain;  
+}
+
+.sticky-nav ul li a.active img {
+    opacity: 2;
+}
+
+.sticky-nav ul li a:hover img {
+    opacity: 1;
+}
+
+.background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.content {
+    text-align: center;
+    max-width: 900px;
+    padding: 20px;
+    margin: 0 auto; 
+    top: 30%; 
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    z-index: 1;
+}
+
+.mainText {
+    font-size: 120px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.subText {
+    font-size: 50px;
+    margin-bottom: 10px;
+    letter-spacing: 5px;
+}
+
+.description {
+    font-size: 30px;
+    line-height: 1.5;
+}
+
+  /* Philippine Goals Section */
+.philippine-goals {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.philippine-goals-header {
+    background-image: url('res/images/turtle.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.philippine-goals-header h2 {
+    color: white;
+    font-size: 60px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.goals-container {
+    max-width: 1200px;
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.goal-card {
+    width: 30%;
+    height: 500px; 
+    margin: 20px;
+    background-color: #f8f8f8; 
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.goal-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+.goal-image {
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.goal-content {
+    flex-grow: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.goal-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+}
+
+.goal-content strong {
+    color: #1A54BA;
+    font-size: 20px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.see-more {
+    text-align: center;
+    margin-top: 30px;
+    width: 100%; 
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.see-more button {
+    padding: 12px 30px;
+    background: #1A54BA;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s ease;
+    box-shadow: 0 4px 10px rgba(26, 84, 186, 0.3);
+}
+
+.see-more button:hover {
+    background: #1545a0;
+}
+
+@media(min-aspect-ratio: 16/9){
+    .banner video{
+        width: 100%;
+        height: auto;
+    }
+}

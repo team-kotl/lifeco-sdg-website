@@ -3,9 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Life on Water</title>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css'>
+    <link rel="stylesheet" href="styles/water.css"> 
+    <title>SDG 14: Life Below Water</title>
 </head>
-<body>
+<body> 
+    <nav class="sticky-nav">
+        <ul>
+          <li><a href="#"><img src="res/icons/land.png" alt="Land"></a></li>
+          <li><a class = 'active' href="#"><img src="res/icons/water.png" alt="Water"></a></li>
+        </ul>
+      </nav>
+    <div class="banner">
+        <video autoplay loop muted playsinline class="background-video">
+            <source src="res/videos/head.mp4" type="video/mp4">
+        </video>
+        <div class="content">
+            <h1 class="mainText">SDG 14</h1>
+            <h2 class="subText">LIFE BELOW WATER</h2>
+            <p class="description">Conserve And Sustainable Use The Oceans, Seas, And Marine Resources For Sustainable Development.</p>
+        </div>
+    </div>
     
+    <section class="philippine-goals">
+        <div class="philippine-goals-header">
+            <h2>PHILIPPINE GOALS</h2>
+        </div>
+        <div class="goals-container">
+            <div class="goal-card">
+                <div class="goal-image" style="background-image: url('res/images/coastal.jpeg');"></div>
+                <div class="goal-content">
+                    <p><strong>By 2020, </strong>conserve at least 10 percent of coastal and marine areas, consistent with national and international law and based on the best available scientific information
+                    </p>
+                </div>
+            </div>
+            <div class="goal-card">
+                <div class="goal-image" style="background-image: url('res/images/fisheries.jpeg');"></div>
+                <div class="goal-content">
+                    <p><strong>By 2020, </strong>prohibit certain forms of fisheries subsidies which contribute to overcapacity and overfishing, eliminate subsidies that contribute to illegal, unreported and unregulated fishing and 
+                        refrain from introducing new such subsidies.</p>
+                </div>
+            </div>
+            <div class="goal-card">
+                <div class="goal-image" style="background-image: url('res/images/ocean.jpeg');"></div>
+                <div class="goal-content">
+                    <p><strong>By 2020,</strong> sustainably manage and protect marine and coastal ecosystems to avoid significant adverse impacts, including by strengthening their resilience, 
+                        and take action for their restoration in order to achieve healthy and productive oceans</p>
+                </div>
+            </div>
+        </div>
+        <div class="see-more">
+            <button>See More</button>
+        </div>
+    </section>
+  
 </body>
 </html>
