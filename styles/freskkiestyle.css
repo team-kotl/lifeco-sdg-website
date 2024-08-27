@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'Inter';
+    src: url(../res/fonts/Inter-VariableFont_opsz\,wght.ttf);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -18,11 +23,11 @@
 }
 
 .SDG14Image {
-    background-image: url('res/images/waterHomepage.png');
+    background-image: url(../res/images/waterHomepage.png);
 }
 
 .SDG15Image {
-    background-image: url('res/images/landHomepage.png');
+    background-image: url(../res/images/landHomepage.png);
 }
 
 .rectangleBlueHomepage, .rectangleGreenHomepage {
