@@ -90,8 +90,6 @@ body {
 
 .header-background-video {
     position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -127,11 +125,45 @@ body {
     line-height: 1.5;
 }
 
-.fixed-arrow {
-    position: fixed;
-    width: 50px;
-    height: 50px;
+.header-buttons-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
 
+.header-buttons {
+    display: inline-block;
+    padding: 10px 25px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+    margin: 25px 0px 0px 20px;
+}
+
+.header-buttons:hover {
+    background-color: rgba(0, 255, 255, 0.3);
+    transform: translateY(-2px);
+}
+
+.problems-container {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    width: 90%;
+    height: 550px;
+    margin: 30px auto;
+    padding: 40px;
+}
+
+.problems-container-inverted {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    width: 90%;
+    height: 550px;
+    margin: 40px auto;
+    padding: 40px;
 }
 
 .problems-header h2 {
@@ -153,38 +185,20 @@ body {
     padding: 0 100px;
 }
 
-.problems-container {
-    display: grid;
-    grid-template-columns: 40% 60%;
-    width: 90%;
-    height: 850px;
-    margin: 40px auto;
-    padding: 10px;
-}
-
-.problems-container-inverted {
-    display: grid;
-    grid-template-columns: 60% 40%;
-    width: 90%;
-    height: 850px;
-    margin: 40px auto;
-    padding: 10px;
-}
-
 .problems-container img,
 .problems-container-inverted img {
     object-fit: cover;
     width: 100%;
-    height: 800px;
+    height: 550px;
     border-radius: 60px;
     vertical-align: middle;
 }
 
-
 .problems-captions h2 {
     text-align: center;
-    font-size: 70px;
+    font-size: 50px;
     padding: 10px 30px;
+  margin-top:50px;
 }
 
 .problems-captions .line {
@@ -193,17 +207,18 @@ body {
 
 .problems-captions p {
     font-size: 32px;
-    padding: 10px 30px;
+    padding: 30px 30px;
+    text-align: center;
 }
 
-.philippine-goals {
+#philippine-goals {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
 
 .philippine-goals-header {
-    background-image: url(../res/images/turtle.jpeg);
+    background-image: url(../res/images/land-goal-header.jpg);
     background-size: cover;
     background-position: center;
     height: 180px;
@@ -272,7 +287,7 @@ body {
 }
 
 .goals-content strong {
-    color: #1A54BA;
+    color: #186423;
     font-size: 20px;
     display: block;
     margin-bottom: 10px;
@@ -289,7 +304,7 @@ body {
 
 .goals-see-more button {
     padding: 12px 30px;
-    background: #1A54BA;
+    background: #2f7e3b;
     color: white;
     border: none;
     border-radius: 25px;
@@ -301,7 +316,7 @@ body {
 }
 
 .goals-see-more button:hover {
-    background: #1545a0;
+    background: #186423;
 }
 
 @media(min-aspect-ratio: 16/9) {
@@ -310,6 +325,16 @@ body {
         height: auto;
     }
 }
+
+.projects-container {
+    position: relative;
+    text-align: center;
+    color: white;
+    margin: 0;
+    height: 350px;
+    overflow: hidden;
+}
+
 
 .projects-header h2 {
     color: #186423;
@@ -324,15 +349,6 @@ body {
     color: gray;
     background-color: #186423;
     margin: 20px auto;
-}
-
-.projects-container {
-    position: relative;
-    text-align: center;
-    color: white;
-    margin: 0;
-    height: 350px;
-    overflow: hidden;
 }
 
 .projects-captions {
@@ -376,7 +392,7 @@ body {
     cursor: pointer;
     border-radius: 90px;
     margin-left: 50px;
-    margin-top: 15px;
+    margin-top: 20px;
 }
 
 .projects-container button:hover {
@@ -388,7 +404,7 @@ body {
     position: absolute;
     top: 0;
     right: 0;
-    height: 95%;
+    height: 94%;
     margin: 30px;
 
 }
