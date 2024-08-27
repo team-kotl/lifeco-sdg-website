@@ -1,0 +1,82 @@
+/* Philippine Goals Section */
+#philippine-goals {
+    min-height: 200vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.philippine-goals-header {
+    background-image: url(../res/images/turtle.jpeg);
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.philippine-goals-header h2 {
+    color: white;
+    font-size: 60px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.goals-container {
+    max-width: 1200px;
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.goals-card {
+    width: 30%;
+    height: 500px; 
+    margin: 20px;
+    background-color: #f8f8f8; 
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.goals-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+.goals-image {
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.goals-content {
+    flex-grow: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.goals-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+}
+
+.goals-content strong {
+    color: #1A54BA;
+    font-size: 20px;
+    display: block;
+    margin-bottom: 10px;
+}
