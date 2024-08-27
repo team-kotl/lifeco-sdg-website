@@ -431,6 +431,7 @@ body {
 
 footer {
     background: linear-gradient(60deg, #73ce84, #317297);
+    background-image: url(../res/images/land-footer.png);
     color: white;
     padding: 40px 20px;
     display: flex;
