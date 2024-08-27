@@ -10,7 +10,7 @@
     box-sizing: border-box;
 }
 
-.banner {
+.header-banner {
     width: 100%;
     height: 100vh;
     position: relative;
@@ -21,7 +21,7 @@
     background-image: linear-gradient(rgba(0,0,0,0.40),rgba(0,0,0,0.40));
 }
 
-.sticky-nav {
+.header-nav {
     position: fixed;
     top: 0;
     right: 0;
@@ -29,7 +29,7 @@
     z-index: 1000;
 }
 
-.sticky-nav ul {
+.header-nav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
@@ -37,17 +37,17 @@
     justify-content: flex-end;
 }
 
-.sticky-nav ul li {
+.header-nav ul li {
     margin: 10px 20px 10px 0px;
     position: relative;
 }
 
-.sticky-nav ul li a {
+.header-nav ul li a {
     display: block;
     position: relative;
 }
 
-.sticky-nav ul li a img {
+.header-nav ul li a img {
     width: auto;  
     height: 50px;  
     opacity: 0.5;
@@ -55,15 +55,15 @@
     object-fit: contain;  
 }
 
-.sticky-nav ul li a.active img {
+.header-nav ul li a.active img {
     opacity: 2;
 }
 
-.sticky-nav ul li a:hover img {
+.header-nav ul li a:hover img {
     opacity: 1;
 }
 
-.sticky-nav ul li a::after {
+.header-nav ul li a::after {
     content: attr(data-tooltip);
     position: absolute;
     bottom: -30px; 
@@ -80,11 +80,11 @@
     transition: opacity 0.3s ease;
 }
 
-.sticky-nav ul li a:hover::after {
+.header-nav ul li a:hover::after {
     opacity: 0.8;
 }
 
-.background-video {
+.header-background-video {
     position: absolute;
     top: 0;
     left: 0;
@@ -94,7 +94,7 @@
     z-index: -1;
 }
 
-.content {
+.header-content {
     text-align: center;
     max-width: 900px;
     padding: 20px;
@@ -106,19 +106,19 @@
     z-index: 1;
 }
 
-.mainText {
+.header-mainText {
     font-size: 120px;
     font-weight: bold;
     margin-bottom: 5px;
 }
 
-.subText {
+.header-subText {
     font-size: 50px;
     margin-bottom: 10px;
     letter-spacing: 5px;
 }
 
-.description {
+.header-description {
     font-size: 30px;
     line-height: 1.5;
 }
@@ -157,7 +157,7 @@
     flex-wrap: wrap;
 }
 
-.goal-card {
+.goals-card {
     width: 30%;
     height: 500px; 
     margin: 20px;
@@ -170,12 +170,12 @@
     flex-direction: column;
 }
 
-.goal-card:hover {
+.goals-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 6px 20px rgba(0,0,0,0.15);
 }
 
-.goal-image {
+.goals-image {
     width: 100%;
     height: 200px;
     background-size: cover;
@@ -184,7 +184,7 @@
     border-top-right-radius: 15px;
 }
 
-.goal-content {
+.goals-content {
     flex-grow: 1;
     padding: 20px;
     display: flex;
@@ -192,21 +192,21 @@
     justify-content: center;
 }
 
-.goal-content p {
+.goals-content p {
     font-size: 18px;
     line-height: 1.6;
     color: #333;
     margin: 0;
 }
 
-.goal-content strong {
+.goals-content strong {
     color: #1A54BA;
     font-size: 20px;
     display: block;
     margin-bottom: 10px;
 }
 
-.see-more {
+.goals-see-more {
     text-align: center;
     margin-top: 30px;
     width: 100%; 
@@ -215,7 +215,7 @@
     align-items: center; 
 }
 
-.see-more button {
+.goals-see-more button {
     padding: 12px 30px;
     background: #1A54BA;
     color: white;
@@ -228,7 +228,7 @@
     box-shadow: 0 4px 10px rgba(26, 84, 186, 0.3);
 }
 
-.see-more button:hover {
+.goals-see-more button:hover {
     background: #1545a0;
 }
 
