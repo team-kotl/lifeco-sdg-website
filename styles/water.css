@@ -8,6 +8,7 @@
     padding: 0;
     font-family: 'Inter', sans-serif;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 .header-banner {
@@ -123,8 +124,31 @@
     line-height: 1.5;
 }
 
+.header-buttons-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.header-buttons {
+    display: inline-block;
+    padding: 10px 25px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+    margin: 25px 0px 0px 20px;
+}
+
+.header-buttons:hover {
+    background-color: rgba(0, 255, 255, 0.3);
+    transform: translateY(-2px);
+}
+
   /* Philippine Goals Section */
-.philippine-goals {
+#philippine-goals {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
