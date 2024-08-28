@@ -211,6 +211,7 @@ body {
     text-align: center;
 }
 
+/* Philippine Goals Section */
 #philippine-goals {
     min-height: 100vh;
     display: flex;
@@ -231,7 +232,7 @@ body {
 .philippine-goals-header h2 {
     color: white;
     font-size: 60px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
     text-transform: uppercase;
     letter-spacing: 5px;
 }
@@ -246,12 +247,12 @@ body {
 
 .goals-card {
     width: 30%;
-    height: 550px;
+    height: 570px; 
     margin: 20px;
-    background-color: #f8f8f8;
+    background-color: #f8f8f8; 
     border-radius: 15px;
     overflow: hidden;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     display: flex;
     flex-direction: column;
@@ -259,7 +260,7 @@ body {
 
 .goals-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
 }
 
 .goals-image {
@@ -277,6 +278,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    text-align: center;
 }
 
 .goals-content p {
@@ -286,25 +288,27 @@ body {
     margin: 0;
 }
 
-.goals-content strong {
-    color: #186423;
+.goals-content title {
+    color: #1A54BA;
     font-size: 20px;
     display: block;
     margin-bottom: 10px;
+    font-weight: bold;
+    text-align: left;
 }
 
 .goals-see-more {
     text-align: center;
     margin-top: 30px;
-    width: 100%;
+    width: 100%; 
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; 
 }
 
 .goals-see-more button {
     padding: 12px 30px;
-    background: #2f7e3b;
+    background: #1A54BA;
     color: white;
     border: none;
     border-radius: 25px;
@@ -316,7 +320,7 @@ body {
 }
 
 .goals-see-more button:hover {
-    background: #186423;
+    background: #1545a0;
 }
 
 @media(min-aspect-ratio: 16/9) {
