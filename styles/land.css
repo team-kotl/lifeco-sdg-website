@@ -277,7 +277,6 @@ body {
     padding: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     text-align: center;
 }
 
@@ -294,7 +293,7 @@ body {
     display: block;
     margin-bottom: 10px;
     font-weight: bold;
-    text-align: left;
+    text-align: center;
 }
 
 .goals-see-more {
