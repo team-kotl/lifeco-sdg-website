@@ -276,6 +276,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    text-align: center;
 }
 
 .goals-content p {
@@ -285,11 +286,13 @@
     margin: 0;
 }
 
-.goals-content strong {
+.goals-content title {
     color: #1A54BA;
     font-size: 20px;
     display: block;
     margin-bottom: 10px;
+    font-weight: bold;
+    text-align: left;
 }
 
 .goals-see-more {
