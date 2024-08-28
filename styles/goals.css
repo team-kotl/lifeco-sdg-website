@@ -23,7 +23,6 @@
     width: auto;
     height: auto;
     transform: translateX(-50%) translateY(-50%);
-    z-index: -1;
     object-fit: cover;
 }
 .philippine-goals-back-button {
@@ -31,7 +30,6 @@
     top: 20px;
     left: 20px;
     background-color: rgba(255, 255, 255, 0.7);
-    border: none;
     border-radius: 50%;
     width: 40px;
     height: 40px;
@@ -48,7 +46,7 @@
 
 .philippine-goals-back-button::before {
     content: '←';
-    font-size: 24px;
+    font-size: 28px;
     color: #333;
 }
 
