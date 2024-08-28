@@ -406,7 +406,7 @@ body {
     position: absolute;
     top: 0;
     right: 0;
-    height: 94%;
+    height: 93%;
     margin: 30px;
 }
 
@@ -429,7 +429,7 @@ body {
     cursor: pointer;
 }
 
-footer {
+.footer-container {
     background: linear-gradient(60deg, #73ce84, #317297);
     background-image: url(../res/images/land-footer.png);
     color: white;
@@ -439,6 +439,8 @@ footer {
     align-items: flex-start;
     flex-wrap: wrap;
     box-shadow: 0 -4px 8px rgba(250, 10, 10, 0.1);
+    height: auto;
+    width: auto;
 }
 
 .footer-logo {
@@ -454,6 +456,7 @@ footer {
     align-items: flex-start;
     flex-basis: 25%;
     text-align: left;
+    font-size: 20px;
 }
 
 .footer-contact p {
@@ -508,7 +511,7 @@ footer {
 }
 
 .footer-copyright {
-    font-size: 12px;
+    font-size: 20px;
     text-align: center;
     margin-top: 30px;
     width: 100%;
