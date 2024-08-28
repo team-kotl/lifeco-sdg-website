@@ -520,49 +520,49 @@
 }
 
 .book-flip:nth-child(1) .cover-page {
-    background-image: url(../res/images/innovasea-image.png);
+    background-image: url(../res/images/water-innovasea-image.png);
     background-size: cover;
     background-position: center;
 }
 
 .book-flip:nth-child(2) .cover-page {
-    background-image: url(../res/images/upstreamtech-image.png);
+    background-image: url(../res/images/water-upstreamtech-image.png);
     background-size: cover;
     background-position: center;
 }
 
 .book-flip:nth-child(3) .cover-page {
-    background-image: url(../res/images/shellcatch-image.png);
+    background-image: url(../res/images/water-shellcatch-image.png);
     background-size: cover;
     background-position: center;
 }
 
 .book-flip:nth-child(4) .cover-page {
-    background-image: url(../res/images/ashored-image.png);
+    background-image: url(../res/images/water-ashored-image.png);
     background-size: cover;
     background-position: center;
 }
 
 .book-flip:nth-child(5) .cover-page {
-    background-image: url(../res/images/xpertsea-image.png);
+    background-image: url(../res/images/water-xpertsea-image.png);
     background-size: cover;
     background-position: center;
 }
 
 .book-flip:nth-child(6) .cover-page {
-    background-image: url(../res/images/knipbi-image.png); 
+    background-image: url(../res/images/water-knipbi-image.png); 
     background-size: cover;
     background-position: center;
 }
 
 .book-flip:nth-child(7) .cover-page {
-    background-image: url(../res/images/monitorfish-image.png);
+    background-image: url(../res/images/water-monitorfish-image.png);
     background-size: cover;
     background-position: center;
 }
 
 .book-flip:nth-child(8) .cover-page {
-    background-image: url(../res/images/innovasea-image.png);
+    background-image: url(../res/images/water-innovasea-image.png);
     background-size: cover;
     background-position: center;
 }

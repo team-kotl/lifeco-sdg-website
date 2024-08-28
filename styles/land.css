@@ -432,6 +432,141 @@ body {
     cursor: pointer;
 }
 
+#innovations {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.innovations-title {
+    background-image: url(../res/images/innovations-header-image.jpeg);
+    background-size: cover;
+    background-position: center;
+    height: 180px; 
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.innovations-title h2 {
+    color: white;
+    font-size: 60px; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin: 0;
+}
+
+.innovations-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 40px;
+    width: 100%;
+    max-width: 1200px;
+    justify-items: center;
+    padding: 0 20px;
+}
+
+.book-flip {
+    position: relative;
+    border-radius: 10px;
+    width: 220px;
+    height: 300px;
+    background-color: whitesmoke;
+    perspective: 1000px;
+    overflow: hidden; 
+}
+
+.book-content {
+    position: relative;
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px 0px 10px 50px;
+    box-sizing: border-box;
+}
+
+.book-flip p {
+    font-size: 16px; 
+    font-weight: normal; 
+    margin: 0px; 
+    text-align: left; 
+    overflow: hidden;
+    height: 100%; 
+    width: 80%;
+}
+
+.cover-page {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s;
+    transform-origin: left;
+    box-shadow: 1px 1px 12px #272727;
+}
+
+.book-flip:hover .cover-page {
+    transform: rotateY(-80deg);
+}
+
+.book-flip:nth-child(1) .cover-page {
+    background-image: url(../res/images/land-landlife-image.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.book-flip:nth-child(2) .cover-page {
+    background-image: url(../res/images/land-ayalawater-image.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.book-flip:nth-child(3) .cover-page {
+    background-image: url(../res/images/land-ekogrid-image.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.book-flip:nth-child(4) .cover-page {
+    background-image: url(../res/images/land-rainforest-image.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.book-flip:nth-child(5) .cover-page {
+    background-image: url(../res/images/land-vestaron-image.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.book-flip:nth-child(6) .cover-page {
+    background-image: url(../res/images/land-covercress-image.png); 
+    background-size: cover;
+    background-position: center;
+}
+
+.book-flip:nth-child(7) .cover-page {
+    background-image: url(../res/images/land-tesselo-image.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.book-flip:nth-child(8) .cover-page {
+    background-image: url(../res/images/land-dendra-image.png);
+    background-size: cover;
+    background-position: center;
+}
+
 .footer-container {
     background-image: url(../res/images/land-footer.png);
     color: white;
