@@ -266,22 +266,24 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    background-color: white;
-    padding: 40px 0;
 }
 
 .innovations-title {
+    background-image: url(../res/images/innovations-header-image.jpeg);
+    background-size: cover;
+    background-position: center;
+    height: 180px; 
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
 
 .innovations-title h2 {
-    color: #000;
-    font-size: 60px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 60px; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
     text-transform: uppercase;
     letter-spacing: 5px;
     margin: 0;
@@ -290,7 +292,7 @@
 .innovations-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-    gap: 20px;
+    gap: 40px;
     width: 100%;
     max-width: 1200px;
     justify-items: center;
