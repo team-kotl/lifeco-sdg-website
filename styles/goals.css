@@ -3,25 +3,76 @@
     min-height: 200vh;
     display: flex;
     flex-direction: column;
+    font-family: 'Inter', sans-serif;
+}
+
+.philippine-goals-container {
+    position: relative;
+    height: 380px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.philippine-goals-video-background {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: -1;
+    object-fit: cover;
+}
+.philippine-goals-back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s;
+    text-decoration: none;
+    z-index: 10;
+}
+.philippine-goals-back-button:hover {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.philippine-goals-back-button::before {
+    content: '←';
+    font-size: 24px;
+    color: #333;
 }
 
 .philippine-goals-header {
-    background-image: url(../res/images/turtle.jpeg);
-    background-size: cover;
-    background-position: center;
-    height: 500px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 30px;
+    position: relative; 
+    text-align: center;
+    width: 150%;
+    height: 40%;
+    max-width: 1000px;
+    padding: 70px;
+    background-color: rgba(255, 255, 255, 0.60);
+    border-radius: 8px;
 }
-
 .philippine-goals-header h2 {
-    color: white;
+    color: #333; 
     font-size: 60px;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
     text-transform: uppercase;
-    letter-spacing: 5px;
+    letter-spacing: 2px;
+    margin: 20px 0 25px 0;
+}
+.philippine-goals-header p {
+    color: #666;
+    font-size: 27px;
+    margin: 0;
 }
 
 .goals-container {
