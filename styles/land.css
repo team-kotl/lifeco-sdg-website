@@ -440,9 +440,6 @@ body {
 }
 
 .innovations-title {
-    background-image: url(../res/images/innovations-header-image.jpeg);
-    background-size: cover;
-    background-position: center;
     height: 180px; 
     width: 100%;
     display: flex;
@@ -452,12 +449,18 @@ body {
 }
 
 .innovations-title h2 {
-    color: white;
-    font-size: 60px; 
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    margin: 0;
+    font-size: 50px;
+    width: 100%;
+    text-align: center;
+    border-bottom: 4px solid #186423;
+    line-height: 0.1em;
+    margin: 100px 0 70px;
+    color: #186423;
+}
+
+.innovations-title span {
+    background: #fff;
+    padding: 0 100px;
 }
 
 .innovations-container {
