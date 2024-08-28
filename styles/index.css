@@ -1,0 +1,177 @@
+@font-face {
+    font-family: 'Inter';
+    src: url(../res/fonts/Inter-VariableFont_opsz\,wght.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex; 
+    position: relative;
+}
+
+.SDG14Image, .SDG15Image {
+    flex: 1 1 50%; 
+    min-height: 100vh; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.SDG14Image {
+    background-image: url(../res/images/waterHomepage.png);
+}
+
+.SDG15Image {
+    background-image: url(../res/images/landHomepage.png);
+}
+
+.rectangleBlueHomepage, .rectangleGreenHomepage {
+    position: absolute;
+    top: 5%;
+    width: 90%;
+    height: 90%;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;    
+}
+
+.rectangleBlueHomepage {
+    left: 5%;
+    background-color: rgba(48, 85, 137, 0.5); 
+}
+
+.rectangleGreenHomepage {
+    right: 5%;
+    background-color: rgba(49, 87, 44, 0.5); 
+}
+
+.mainTitle {
+    text-align: left;
+    font-weight: 800;
+    color: white;
+    font-family: "Inter", sans-serif;
+    font-size: clamp(60px, 8vw, 100px);
+    margin-top: 10vh;
+}
+
+.subTitle {
+    text-align: center;
+    font-weight: 600;
+    color: white;
+    font-family: "Inter", sans-serif;
+    font-size: clamp(30px, 4vw, 50px);
+    margin-top: 2vh;
+}
+
+.motto {
+    display: none; 
+    color: white;
+    font-size: 20px;
+    text-align: left;
+    padding: 10px;
+    margin-top: 20px;
+    font-family: "Inter", sans-serif;
+}
+
+.SDG14Image:hover .rectangleBlueHomepage, 
+.SDG15Image:hover .rectangleGreenHomepage { 
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+}
+
+.SDG14Image:hover .rectangleBlueHomepage {
+    background-color: #1D3557; 
+}
+
+.SDG15Image:hover .rectangleGreenHomepage {
+    background-color: #31572C; 
+}
+
+.SDG14Image:hover .motto {
+    display: block; 
+    max-width: 50%;
+}
+
+.SDG15Image:hover .motto {
+    display: block; 
+    max-width: 36%;
+}
+
+button {
+    outline: none;
+    cursor: pointer;
+    border: none;
+    padding: 0.8rem 2rem;
+    margin: 20px;
+    font-family: "Inter", sans-serif;
+    position: relative;
+    display: block;
+    font-weight: 700;
+    font-size: 17px;
+    border-radius: 500px;
+    overflow: hidden;
+    color: black;
+}
+
+button span {
+    position: relative;
+    z-index: 10;
+    transition: color 1s;
+}
+
+button:hover span {
+    color: white;
+}
+
+button::before,
+button::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+button::before {
+    content: "";
+    background: white;
+    width: 120%;
+    left: -10%;
+    transform: skew(30deg);
+    transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+}
+
+button:hover::before {
+    transform: translate3d(100%, 0, 0);
+}
+
+.btnHomepage {
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+.SDG14Image:hover button {
+    background: #2a6f97;
+}
+
+.SDG15Image:hover button {
+    background: #6a994e;
+}
+
+.SDG14Image:hover .btnHomepage,
+.SDG15Image:hover .btnHomepage {
+    display: block;
+}

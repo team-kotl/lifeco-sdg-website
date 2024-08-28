@@ -261,27 +261,29 @@
     }
 }
 
-.innovations {
+#innovations {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    background-color: white;
-    padding: 40px 0;
 }
 
 .innovations-title {
+    background-image: url(../res/images/innovations-header-image.jpeg);
+    background-size: cover;
+    background-position: center;
+    height: 180px; 
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
 
 .innovations-title h2 {
-    color: #000;
-    font-size: 60px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 60px; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
     text-transform: uppercase;
     letter-spacing: 5px;
     margin: 0;
@@ -290,15 +292,11 @@
 .innovations-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-    gap: 20px;
+    gap: 40px;
     width: 100%;
     max-width: 1200px;
     justify-items: center;
     padding: 0 20px;
-}
-
-.innovations h3{
-    color: white;
 }
 
 .book-flip {
@@ -307,7 +305,6 @@
     width: 220px;
     height: 300px;
     background-color: whitesmoke;
-    box-shadow: 1px 1px 12px #272727;
     perspective: 1000px;
     overflow: hidden; 
 }
@@ -339,7 +336,6 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #0077b6;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -350,4 +346,141 @@
 
 .book-flip:hover .cover-page {
     transform: rotateY(-80deg);
+}
+
+.book-flip:nth-child(1) .cover-page {
+    background-image: url(../res/images/innovasea-image.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.book-flip:nth-child(2) .cover-page {
+    background-image: url(../res/images/upstreamtech-image.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.book-flip:nth-child(3) .cover-page {
+    background-image: url(../res/images/shellcatch-image.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.book-flip:nth-child(4) .cover-page {
+    background-image: url(../res/images/ashored-image.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.book-flip:nth-child(5) .cover-page {
+    background-image: url(../res/images/xpertsea-image.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.book-flip:nth-child(6) .cover-page {
+    background-image: url(../res/images/knipbi-image.png); 
+    background-size: cover;
+    background-position: center;
+}
+
+.book-flip:nth-child(7) .cover-page {
+    background-image: url(../res/images/monitorfish-image.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.book-flip:nth-child(8) .cover-page {
+    background-image: url(../res/images/innovasea-image.png);
+    background-size: cover;
+    background-position: center;
+}
+
+
+.footer-container {
+    background-image: url(../res/images/land-footer.png);
+    color: white;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    box-shadow: 0 -4px 8px rgba(250, 10, 10, 0.1);
+    height: auto;
+    width: auto;
+}
+
+.footer-logo {
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    flex-basis: 25%;
+}
+
+.footer-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-basis: 25%;
+    text-align: left;
+    font-size: 20px;
+}
+
+.footer-contact p {
+    margin: 8px 0;
+    color: #fffbfb;
+}
+
+.footer-contact p strong {
+    display: block;
+    margin-bottom: 2px;
+}
+
+.footer-slogan-container {
+    flex-basis: 30%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid #ffffff;
+    padding: 30px;
+    margin-top: 30px;
+    border-radius: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.footer-slogan {
+    font-size: 30px;
+    color: #ffffff;
+}
+
+.footer-buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-buttons a {
+    display: inline-block;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    margin: 5px 0;
+    border-radius: 25px;
+    border: 2px solid #ffffff;
+    transition: background 0.3s ease;
+}
+
+.footer-buttons a:hover {
+    background-color: #73ce84;
+    border: 2px solid #ffffff;
+}
+
+.footer-copyright {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 30px;
+    width: 100%;
+    color: #fffbfb;
 }
