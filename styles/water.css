@@ -261,7 +261,7 @@
     }
 }
 
-.innovations {
+#innovations {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -297,17 +297,12 @@
     padding: 0 20px;
 }
 
-.innovations h3{
-    color: white;
-}
-
 .book-flip {
     position: relative;
     border-radius: 10px;
     width: 220px;
     height: 300px;
     background-color: whitesmoke;
-    box-shadow: 1px 1px 12px #272727;
     perspective: 1000px;
     overflow: hidden; 
 }
@@ -339,7 +334,6 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #0077b6;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -350,6 +344,54 @@
 
 .book-flip:hover .cover-page {
     transform: rotateY(-80deg);
+}
+
+.book-flip:nth-child(1) .cover-page {
+    background-image: url(../res/images/innovasea-image.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.book-flip:nth-child(2) .cover-page {
+    background-image: url(../res/images/upstreamtech-image.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.book-flip:nth-child(3) .cover-page {
+    background-image: url(../res/images/shellcatch-image.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.book-flip:nth-child(4) .cover-page {
+    background-image: url(../res/images/ashored-image.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.book-flip:nth-child(5) .cover-page {
+    background-image: url(../res/images/xpertsea-image.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.book-flip:nth-child(6) .cover-page {
+    background-image: url(../res/images/knipbi-image.png); 
+    background-size: cover;
+    background-position: center;
+}
+
+.book-flip:nth-child(7) .cover-page {
+    background-image: url(../res/images/monitorfish-image.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.book-flip:nth-child(8) .cover-page {
+    background-image: url(../res/images/innovasea-image.png);
+    background-size: cover;
+    background-position: center;
 }
 
 footer {
