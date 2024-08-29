@@ -118,7 +118,6 @@ body{
     padding: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
 }
 
 .goals-content p {
@@ -126,11 +125,14 @@ body{
     line-height: 1.6;
     color: #333;
     margin: 0;
+    text-align: center;
 }
 
-.goals-content strong {
+.goals-content title {
     color: #1A54BA;
     font-size: 20px;
     display: block;
     margin-bottom: 10px;
+    font-weight: bold;
+    text-align: center;
 }
