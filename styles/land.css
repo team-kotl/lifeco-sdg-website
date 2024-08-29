@@ -171,7 +171,6 @@ body {
     font-size: 50px;
     width: 100%;
     text-align: center;
-    border-bottom: 4px solid #186423;
     line-height: 0.1em;
     margin: 100px 0 70px;
     color: #186423;
@@ -184,6 +183,15 @@ body {
 .problems-header span {
     background: #fff;
     padding: 0 100px;
+}
+
+.problems-header h2::before,
+.problems-header h2::after {
+    content: "";
+    display: inline-block;
+    width: 33%; 
+    border-bottom: 4px solid #186423;
+    vertical-align: middle;
 }
 
 .problems-container img,
@@ -230,7 +238,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 30px;
+    margin: 120px 0px 32px 0px;
 }
 
 .philippine-goals-header h2 {
@@ -356,6 +364,7 @@ body {
     color: gray;
     background-color: #186423;
     margin: 20px auto;
+    margin-bottom: 50px;
 }
 
 .projects-captions {
@@ -456,7 +465,6 @@ body {
     font-size: 50px;
     width: 100%;
     text-align: center;
-    border-bottom: 4px solid #186423;
     line-height: 0.1em;
     margin: 100px 0 70px;
     color: #186423;
@@ -465,6 +473,15 @@ body {
 .innovations-title span {
     background: #fff;
     padding: 0 100px;
+}
+
+.innovations-title h2::before,
+.innovations-title h2::after {
+    content: "";
+    display: inline-block;
+    width: 33%; 
+    border-bottom: 4px solid #186423;
+    vertical-align: middle;
 }
 
 .innovations-container {

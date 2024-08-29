@@ -168,7 +168,6 @@
     font-size: 50px;
     width: 100%;
     text-align: center;
-    border-bottom: 4px solid #1545a0;
     line-height: 0.1em;
     margin: 100px 0 70px;
     color: #1545a0;
@@ -181,6 +180,15 @@
 .problems-header span {
     background: #fff;
     padding: 0 100px;
+}
+
+.problems-header h2::before,
+.problems-header h2::after {
+    content: "";
+    display: inline-block;
+    width: 33%; 
+    border-bottom: 4px solid #1545a0;
+    vertical-align: middle;
 }
 
 .problems-container img,
@@ -197,7 +205,7 @@
     text-align: center;
     font-size: 45px;
     padding: 10px 30px;
-  margin-top:50px;
+    margin-top:50px;
 }
 
 .problems-captions .line {
@@ -227,7 +235,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 30px;
+    margin: 120px 0px 32px 0px;
 }
 
 .philippine-goals-header h2 {
@@ -354,6 +362,7 @@
     color: gray;
     background-color: #1545a0;
     margin: 20px auto;
+    margin-bottom: 50px;
 }
 
 .projects-captions {
@@ -403,8 +412,8 @@
 }
 
 .projects-container button:hover {
-    background-color: #186423;
-    border: 2px solid #186423;
+    background-color: #1545a0;
+    border: 2px solid #1545a0;
 }
 
 .scroll-container {
@@ -455,7 +464,6 @@
     font-size: 50px;
     width: 100%;
     text-align: center;
-    border-bottom: 4px solid #1545a0;
     line-height: 0.1em;
     margin: 100px 0 70px;
     color: #1545a0;
@@ -465,6 +473,16 @@
     background: #fff;
     padding: 0 100px;
 }
+
+.innovations-title h2::before,
+.innovations-title h2::after {
+    content: "";
+    display: inline-block;
+    width: 33%; 
+    border-bottom: 4px solid #1545a0;
+    vertical-align: middle;
+}
+
 
 .innovations-container {
     display: grid;
@@ -571,6 +589,34 @@
     background-image: url(../res/images/water-innovasea-image.png);
     background-size: cover;
     background-position: center;
+}
+
+/* Scroll Top */
+.scroll-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 94%;
+    margin: 30px;
+}
+
+.scroll-container img {
+    height: 45px;
+    width: 45px;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+.scroll-container:before {
+    content: '';
+    display: block;
+    height: 100vh;
+}
+
+.scroll-container a {
+    position: sticky;
+    top: 900px;
+    cursor: pointer;
 }
 
 /* Footer */
