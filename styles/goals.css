@@ -1,4 +1,9 @@
 /* Philippine Goals Section */
+body{
+    margin: 0;
+    padding: 0;
+}
+
 #philippine-goals {
     min-height: 200vh;
     display: flex;
