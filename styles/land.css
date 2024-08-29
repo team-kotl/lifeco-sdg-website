@@ -289,7 +289,7 @@ body {
 }
 
 .goals-content title {
-    color: #1A54BA;
+    color: #186423;
     font-size: 20px;
     display: block;
     margin-bottom: 10px;
@@ -308,7 +308,7 @@ body {
 
 .goals-see-more button {
     padding: 12px 30px;
-    background: #1A54BA;
+    background: #186423;
     color: white;
     border: none;
     border-radius: 25px;
@@ -320,7 +320,7 @@ body {
 }
 
 .goals-see-more button:hover {
-    background: #1545a0;
+    background: #2dbb43;
 }
 
 @media(min-aspect-ratio: 16/9) {
@@ -344,7 +344,7 @@ body {
     color: #186423;
     text-align: center;
     font-size: 45px;
-    margin: 0;
+    margin-top: 70px;
 }
 
 .line {
@@ -410,7 +410,7 @@ body {
     position: absolute;
     top: 0;
     right: 0;
-    height: 93%;
+    height: 94%;
     margin: 30px;
 }
 

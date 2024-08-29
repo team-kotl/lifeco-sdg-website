@@ -333,7 +333,7 @@
     text-align: center;
     color: white;
     margin: 0;
-    height: 350px;
+    height: 425px;
     overflow: hidden;
 }
 
@@ -342,7 +342,7 @@
     color: #1545a0;
     text-align: center;
     font-size: 45px;
-    margin: 0;
+    margin-top: 70px;
 }
 
 .line {
