@@ -153,7 +153,7 @@ body {
     display: grid;
     grid-template-columns: 40% 60%;
     width: 90%;
-    height: 550px;
+    height: 450px;
     margin: 30px auto;
     padding: 40px;
 }
@@ -162,13 +162,13 @@ body {
     display: grid;
     grid-template-columns: 60% 40%;
     width: 90%;
-    height: 550px;
+    height: 450px;
     margin: 40px auto;
     padding: 40px;
 }
 
 .problems-header h2 {
-    font-size: 45px;
+    font-size: 50px;
     width: 100%;
     text-align: center;
     border-bottom: 4px solid #186423;
@@ -190,14 +190,15 @@ body {
 .problems-container-inverted img {
     object-fit: cover;
     width: 100%;
-    height: 550px;
+    height: 450px;
     border-radius: 60px;
     vertical-align: middle;
+    margin-top: 10px;
 }
 
 .problems-captions h2 {
     text-align: center;
-    font-size: 50px;
+    font-size: 45px;
     padding: 10px 30px;
   margin-top:50px;
 }
@@ -210,6 +211,8 @@ body {
     font-size: 32px;
     padding: 30px 30px;
     text-align: center;
+    padding: 20px;
+    margin: 10px;
 }
 
 /* Philippine Goals Section */
