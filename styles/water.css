@@ -707,3 +707,30 @@
     width: 100%;
     color: #fffbfb;
 }
+
+.scroll-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 590%;
+    margin: 30px;
+}
+
+.scroll-container img {
+    height: 45px;
+    width: 45px;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+.scroll-container:before {
+    content: '';
+    display: block;
+    height: 100vh;
+}
+
+.scroll-container a {
+    position: sticky;
+    top: 900px;
+    cursor: pointer;
+}
