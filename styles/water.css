@@ -735,9 +735,52 @@
     cursor: pointer;
 }
 
+.desktop-view {
+    display: block;
+}
+
+.desktop-problem2-view {
+    display: grid;
+}
+
+.mobile-view {
+    display: none;
+}
+
+.revert-problem2-view {
+    display: none;
+}
+
+@media (max-width: 1220px) {
+    .revert-problem2-view {
+        display: block;
+    }
+    .desktop-problem2-view {
+        display: none;
+    }
+
+    .problems-container {
+      grid-template-columns: 1fr;
+      height: auto;
+    }
+    
+}
+
 @media (max-width: 1024px) {
     .header-banner {
       height: 70vh;
+    }
+
+    .revert-problem2-desktop-img {
+        display: none;
+    }
+
+    .desktop-view {
+        display: none;
+    }
+
+    .mobile-view {
+        display: block;
     }
   
     .header-content {
@@ -764,7 +807,7 @@
     }
   
     .problems-captions h2 {
-      font-size: 35px;
+      font-size: 38px;
     }
   
     .problems-captions p {
@@ -774,9 +817,30 @@
     .goals-card {
       width: 45%;
     }
+
+    .projects-container {
+        height: auto;
+    }
   
     .projects-container img {
-      height: 300px;
+      height: auto;
+    }
+
+    .projects-captions{
+        margin-bottom: 20%;
+        top: 20%;
+    }
+
+    .projects-captions h1 {
+        font-size: 38px;
+    }
+
+    .projects-captions p {
+        font-size: 24px;
+    }
+
+    .philippine-goals-header{
+        background-image: url(../res/images/Mobile-Philippine-goals-header.jpg);
     }
   }
   
@@ -788,7 +852,6 @@
     .header-content {
       padding: 15px;
       top: 20%;
-      transform: translateY(-50%);
     }
   
     .header-mainText {
