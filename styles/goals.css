@@ -2,13 +2,13 @@
 body{
     margin: 0;
     padding: 0;
+    font-family: 'Inter', sans-serif;
 }
 
 #philippine-goals {
     min-height: 200vh;
     display: flex;
     flex-direction: column;
-    font-family: 'Inter', sans-serif;
 }
 
 .philippine-goals-container {
@@ -128,7 +128,7 @@ body{
     text-align: center;
 }
 
-.goals-content title {
+.goals-content .goals-title {
     color: #1A54BA;
     font-size: 20px;
     display: block;
