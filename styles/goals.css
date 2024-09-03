@@ -141,27 +141,15 @@ body{
     text-align: center;
 }
 
-
-<<<<<<< HEAD
-@media (max-width: 480px) {
-    @font-face {
-        font-family: 'Poppins';
-        src: url(../res/fonts/Poppins-Regular.ttf);
-=======
-.desktop-view {
-    display: block;
-}
-
 .mobile-view {
     display: none;
 }
 
 
-@media (max-width: 767px) {
-
-    .philippine-goals-header{
-        background-color: #ffffff9d;
->>>>>>> f77dfed4219b9c10d273b77afc9b87394c93272a
+@media (max-width: 480px) {
+    @font-face {
+        font-family: 'Poppins';
+        src: url(../res/fonts/Poppins-Regular.ttf);
     }
 
     .desktop-view {
@@ -172,7 +160,6 @@ body{
         display: block;
     }
 
-<<<<<<< HEAD
     .philippine-goals-container {
         height: 100vh;
     }
@@ -199,12 +186,3 @@ body{
         width: 90%;
     }
 }
-=======
-    .goals-card {
-        width: 55%; 
-        height: 100%;
-        margin: 10px 0; 
-    }
-
-}
->>>>>>> f77dfed4219b9c10d273b77afc9b87394c93272a
