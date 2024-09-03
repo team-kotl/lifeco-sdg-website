@@ -299,7 +299,7 @@ body {
     margin: 0;
 }
 
-.goals-content title {
+.goals-content .goals-title {
     color: #186423;
     font-size: 20px;
     display: block;
@@ -317,7 +317,7 @@ body {
     align-items: center; 
 }
 
-.goals-see-more button {
+.goals-see-more .button {
     padding: 12px 30px;
     background: #186423;
     color: white;
@@ -328,9 +328,10 @@ body {
     font-weight: bold;
     transition: 0.3s ease;
     box-shadow: 0 4px 10px rgba(26, 84, 186, 0.3);
+    text-decoration: none;
 }
 
-.goals-see-more button:hover {
+.goals-see-more .button:hover {
     background: #2dbb43;
 }
 
