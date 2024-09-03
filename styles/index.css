@@ -1,17 +1,15 @@
 @font-face {
     font-family: 'Inter';
-    src: url(../res/fonts/Inter-VariableFont_opsz\,wght.ttf);
+    src: url("../res/fonts/Inter-VariableFont_opsz\,wght.ttf");
 }
 
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 .container {
-    display: flex; 
-    position: relative;
+    display: flex;
 }
 
 .SDG14Image, .SDG15Image {
@@ -23,7 +21,7 @@
 }
 
 .SDG14Image {
-    background-image: url(../res/images/waterHomepage.png);
+    background-image: url("../res/images/waterHomepage.png");
 }
 
 .SDG15Image {
@@ -174,4 +172,39 @@ button:hover::before {
 .SDG14Image:hover .btnHomepage,
 .SDG15Image:hover .btnHomepage {
     display: block;
+}
+
+@media (max-width: 480px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .SDG14Image:hover .desktop-view,
+    .SDG15Image:hover .desktop-view {
+        display: none;
+    }
+    
+    .SDG14Image, .SDG15Image {
+        flex: 1 1 50%; 
+        min-height: 50vh;
+    }
+
+    .SDG14Image:hover .motto {
+        display: block; 
+        max-width: 80%;
+    }
+    
+    .SDG15Image:hover .motto {
+        display: block; 
+        max-width: 80%;
+    }
+
+    .mainTitle {
+        margin-top: 0;
+    }
+
+    .SDG15Image .motto {
+        text-align: justify;
+        font-size: 15px;
+    }
 }

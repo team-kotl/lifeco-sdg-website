@@ -423,14 +423,15 @@ body {
     position: absolute;
     top: 0;
     right: 0;
-    height: 94%;
-    margin: 30px;
+    height: 100%;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    z-index: 1001;
 }
 
 .scroll-container img {
     height: 45px;
     width: 45px;
-    background-color: #ffffff;
     border-radius: 10px;
 }
 
@@ -545,7 +546,7 @@ body {
 }
 
 .book-flip:nth-child(1) .cover-page {
-    background-image: url(../res/images/land-landlife-image.png);
+    background-image: url(../res/images/carland-landlife-image.png);
     background-size: cover;
     background-position: center;
 }
@@ -678,4 +679,534 @@ body {
     margin-top: 30px;
     width: 100%;
     color: #fffbfb;
+}
+
+.mobile-view {
+    display: none;
+}
+
+@media (max-width: 480px) {
+    .desktop-view {
+        display: none;
+    }
+
+    .mobile-view {
+        display: block;
+    }
+
+    @font-face {
+        font-family: 'Poppins';
+        src: url(../res/fonts/Poppins-Regular.ttf);
+    }
+    
+    * {
+        font-family: 'Poppins', sans-serif;
+        scroll-behavior: smooth;
+    }
+    
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .header-nav {
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 1000;
+    }
+    
+    .header-nav ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: flex-end;
+    }
+    
+    .header-nav ul li {
+        margin: 10px 20px 10px 0px;
+        position: relative;
+    }
+    
+    .header-nav ul li a {
+        display: block;
+        position: relative;
+    }
+    
+    .header-nav ul li a img {
+        width: auto;
+        height: 50px;
+        opacity: 0.5;
+        transition: opacity 0.3s ease;
+        object-fit: contain;
+    }
+    
+    .header-nav ul li a.active img {
+        opacity: 2;
+    }
+    
+    .header-nav ul li a:hover img {
+        opacity: 1;
+    }
+    
+    .header-nav ul li a::after {
+        content: attr(data-tooltip);
+        position: absolute;
+        bottom: -30px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: rgba(0, 0, 0, 0.8);
+        color: #fff;
+        padding: 5px 10px;
+        border-radius: 5px;
+        font-size: 12px;
+        white-space: nowrap;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.3s ease;
+    }
+    
+    .header-nav ul li a:hover::after {
+        opacity: 0.8;
+    }
+    
+    .header-background-video {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+    }
+    
+    .header-banner {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+        align-items: center;
+        color: white;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.40));
+    }
+    
+    .header-content {
+        text-align: center;
+        width: 100vw;
+        margin: 0;
+        top: 15%;
+        position: absolute;
+        z-index: 1;
+    }
+    
+    .header-mainText {
+        font-size: 80px;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+    
+    .header-subText {
+        font-size: 20px;
+        margin-bottom: 10px;
+        letter-spacing: 5px;
+    }
+    
+    .header-description {
+        font-size: 15px;
+        line-height: 1.5;
+    }
+    
+    .header-button {
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: center;
+    }
+    
+    .header-buttons {
+        background-color: rgba(255, 255, 255, 0.2);
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s, transform 0.3s;
+    }
+    
+    .header-buttons:hover {
+        background-color: rgba(0, 255, 255, 0.3);
+        transform: translateY(-2px);
+    }
+    
+    .problems-header h2 {
+        font-size: 50px;
+        width: 100%;
+        line-height: 0.1em;
+        margin: 100px 0 70px;
+        color: #186423;
+    }
+
+    .problems-header h2::before, .problems-header h2::after {
+        display: none;
+    }
+
+    .problems-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+        height: auto;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    
+    .problems-container-inverted {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+        padding: 0;
+        height: auto;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    
+    .problems-container img,
+    .problems-container-inverted img {
+        object-fit: cover;
+        width: 80vw;
+        height: 40vh;
+        border-radius: 60px;
+        margin: auto;
+    }
+    
+    .problems-captions h2 {
+        text-align: center;
+        font-size: 35px;
+        margin-top: 20px;
+    }
+    
+    .problems-captions .line {
+        margin: 5px auto;
+    }
+    
+    .problems-captions p {
+        font-size: 16px;
+        text-align: center;
+    }
+    
+    /* Philippine Goals Section */
+    .philippine-goals-header {
+        background-image: url(../res/images/mobile-land-goal-header.png);
+        background-size: cover;
+        background-position: center;
+        height: 350px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 120px 0px 32px 0px;
+    }
+    
+    .philippine-goals-header h2 {
+        color: white;
+        font-size: 60px;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        text-transform: uppercase;
+        text-align: center;
+        letter-spacing: 5px;
+    }
+    
+    .goals-container {
+        max-width: 1200px;
+        margin: 30px auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    
+    .goals-card {
+        width: 90%;
+        height: 570px; 
+        margin: 5%;
+        background-color: #f8f8f8; 
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .goals-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+    }
+    
+    .goals-image {
+        width: 100%;
+        height: 200px;
+        background-size: cover;
+        background-position: center;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+    
+    .goals-content {
+        flex-grow: 1;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .goals-content p {
+        font-size: 18px;
+        line-height: 1.6;
+        color: #333;
+        margin: 0;
+    }
+    
+    .goals-content title {
+        color: #186423;
+        font-size: 20px;
+        display: block;
+        margin-bottom: 10px;
+        font-weight: bold;
+        text-align: center;
+    }
+    
+    .goals-see-more {
+        text-align: center;
+        width: 100%; 
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .goals-see-more button {
+        padding: 12px 30px;
+        background: #186423;
+        color: white;
+        border: none;
+        border-radius: 25px;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: bold;
+        transition: 0.3s ease;
+        box-shadow: 0 4px 10px rgba(26, 84, 186, 0.3);
+    }
+    
+    .projects-container {
+        text-align: center;
+        color: white;
+        margin: 0;
+        height: 100vh;
+    }
+    
+    .projects-captions {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        color: white;
+        text-align: left;
+    }
+    
+    .projects-captions h1 {
+        text-shadow: 5px 3px rgba(0, 0, 0, 0.3);
+        font-size: 30px;
+    }
+    
+    .projects-captions p {
+        text-shadow: 5px 1px rgba(0, 0, 0, 0.3);
+        font-size: 18px;
+        padding-left: 0;
+        margin-top: 20px;
+    }
+    
+    .projects-container img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        object-position: center;
+        margin: 0;
+    }
+    
+    .projects-container button {
+        display: block;
+        color: rgb(255, 255, 255);
+        border: 2px solid #ffffff;
+        background-color: transparent;
+        padding: 9px 25px;
+        text-decoration: none;
+        font-size: 15px;
+        margin: 20px 0px 0px 0px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+        border-radius: 90px;
+    }
+    
+    .scroll-container {
+        position: sticky;
+        transform: translateX(85vw) translateY(92vh);
+        height: 45px;
+        width: 45px;
+    }
+    
+    .scroll-container img {
+        height: auto;
+        width: 100%;
+        border-radius: 10px;
+    }
+    
+    .scroll-container:before {
+        display: none;
+    }
+
+    .innovations-title {
+        height: 180px; 
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+    
+    .innovations-title h2 {
+        font-size: 50px;
+        width: 100%;
+        text-align: center;
+        line-height: 0.1em;
+        margin: 100px 0 70px;
+        color: #186423;
+    }
+    
+    .innovations-title h2::before, .innovations-title h2::after {
+        display: none;
+    }
+
+    .innovations-title span {
+        padding: 0;
+        width: 100%;
+    }
+    
+    .innovations-title h2::before,
+    .innovations-title h2::after {
+        display: none;
+    }
+
+    .book-flip:nth-child(1) .cover-page {
+        background-image: url(../res/images/cartoon-land-landlife-image.png);
+    }
+    
+    .book-flip:nth-child(2) .cover-page {
+        background-image: url(../res/images/cartoon-land-ayala-image.png);
+    }
+    
+    .book-flip:nth-child(3) .cover-page {
+        background-image: url(../res/images/cartoon-land-ekogrid-image.png);
+    }
+    
+    .book-flip:nth-child(4) .cover-page {
+        background-image: url(../res/images/cartoon-land-rainforest-image.png);
+    }
+    
+    .book-flip:nth-child(5) .cover-page {
+        background-image: url(../res/images/cartoon-land-vestaron-image.png);
+    }
+    
+    .book-flip:nth-child(6) .cover-page {
+        background-image: url(../res/images/cartoon-land-covercress-image.png); 
+    }
+    
+    .book-flip:nth-child(7) .cover-page {
+        background-image: url(../res/images/cartoon-land-tesselo-image.png);
+    }
+    
+    .book-flip:nth-child(8) .cover-page {
+        background-image: url(../res/images/cartoon-land-dendra-image.png);
+    }
+    
+    .footer-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 15px 15px;
+        gap: 10px;
+        margin-top: 30px;
+    }
+    
+    .footer-logo {
+        font-size: 30px;
+        font-weight: bold;
+        letter-spacing: 2px;
+        grid-column-start: 1;
+        grid-column-start: 1;
+    }
+    
+    .footer-contact {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        font-size: 20px;
+        grid-column-start: 2;
+        grid-column-start: 2;
+    }
+    
+    .footer-contact p {
+        margin: 8px 0;
+        color: #fffbfb;
+    }
+    
+    .footer-contact p strong {
+        display: block;
+        margin-bottom: 2px;
+    }
+    
+    .footer-slogan-container {
+        display: flex;
+        align-items: center;
+        border: 1px solid #ffffff;
+        padding: 20px;
+        margin-top: 30px;
+        border-radius: 40px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        text-align: center;
+        grid-column: span 2;
+    }
+    
+    .footer-slogan {
+        text-align: left;
+        font-size: 20px;
+        margin-right: 5px;
+        color: #ffffff;
+    }
+    
+    .footer-buttons {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .footer-buttons a {
+        display: inline-block;
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 16px;
+        font-weight: bold;
+        padding: 10px 20px;
+        margin: 5px 0;
+        border-radius: 25px;
+        border: 2px solid #ffffff;
+        transition: background 0.3s ease;
+    }
+    
+    .footer-buttons a:hover {
+        background-color: #73ce84;
+        border: 2px solid #ffffff;
+    }
+    
+    .footer-copyright {
+        font-size: 20px;
+        text-align: center;
+        margin-top: 30px;
+        width: 100%;
+        color: #fffbfb;
+        grid-column: span 2;
+    }
 }

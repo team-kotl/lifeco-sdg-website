@@ -12,15 +12,21 @@
 <body>
     <nav class="header-nav">
         <ul>
-            <li><a href="water.html" data-tooltip="SDG 14"><img src="res/icons/water.png" alt="Water"></a></li>
-            <li><a class='active' href="land.html" data-tooltip="SDG 15"><img src="res/icons/land.png" alt="Land"></a>
+            <li>
+                <a href="water.html" data-tooltip="SDG 14"><img src="res/icons/water.png" alt="Water"></a>
+            </li>
+            <li>
+                <a class='active' href="land.html" data-tooltip="SDG 15"><img src="res/icons/land.png" alt="Land"></a>
             </li>
         </ul>
     </nav>
 
     <section class="header-banner">
-        <video autoplay loop muted playsinline class="header-background-video">
-            <source src="res/videos/land-header-video.mp4" type="video/mp4">
+        <video autoplay loop muted playsinline class="header-background-video desktop-view">
+            <source src="res/videos/land-header-video.mp4" alt="Land Life Background Video" type="video/mp4">
+        </video>
+        <video autoplay loop muted playsinline class="header-background-video mobile-view">
+            <source src="res/videos/Mobile-Land-header-video.mp4" alt="Cartoon Land Life Background Video" type="video/mp4">
         </video>
         <div class="header-content">
             <h1 class="header-mainText">SDG 15</h1>
@@ -36,13 +42,18 @@
             </div>
         </div>
     </section>
+    
+    <div class="scroll-container">
+        <a href="#top"><img src="res/icons/double_up.png" alt="Top" class="scroll-container-img"></a>
+    </div>
 
     <header class="problems-header">
-        <h2><span>PROBLEMS</span></h2>
+        <h2>PROBLEMS</h2>
     </header>
 
     <section id="problems-select" class="problems-container">
-        <img src="res/images/land-problem-degraded.jpg" alt="Degraded Land">
+        <img src="res/images/land-problem-degraded.jpg" class="desktop-view" alt="Degraded Land">
+        <img src="res/images/mobile-land-problem-degraded.jpg" class="mobile-view" alt="Degraded Land">
         <div class="problems-captions">
             <h2>Rapid Decline</h2>
             <hr class="line">
@@ -63,11 +74,13 @@
                 This stagnation threatens the conservation of endemic species and critical habitats, undermining
                 national and global biodiversity goals.</p>
         </div>
-        <img src="res/images/land-problem-deforestation.jpg" alt="Elephants">
+        <img src="res/images/land-problem-deforestation.jpg" class="desktop-view" alt="Elephants">
+        <img src="res/images/mobile-land-problem-deforestation.jpg" class="mobile-view" alt="Elephants">
     </section>
     <br>
     <section class="problems-container">
-        <img src="res/images/land-problem-elephant.jpg" alt="Degraded Land">
+        <img src="res/images/land-problem-elephant.jpg" class="desktop-view" alt="Degraded Land">
+        <img src="res/images/mobile-land-problem-elephant.png" class="mobile-view" alt="Degraded Land">
         <div class="problems-captions">
             <h2>Mass Extinction Crisis</h2>
             <hr class="line">
@@ -85,7 +98,8 @@
         </div>
         <div class="goals-container">
             <div class="goals-card">
-                <div class="goals-image" style="background-image: url('res/images/land-goal-one.jpg');"></div>
+                <div class="goals-image desktop-view" style="background-image: url('res/images/land-goal-one.jpg');"></div>
+                <div class="goals-image mobile-view" style="background-image: url('res/images/mobile-land-goal-one.png');"></div>
                 <div class="goals-content">
                     <h3 class = "goals-title">Urgent Measures Against Poaching and Wildlife
                             Trafficking</h3> 
@@ -96,7 +110,8 @@
                 </div>
             </div>
             <div class="goals-card">
-                <div class="goals-image" style="background-image: url('res/images/land-goal-two.jpg');"></div>
+                <div class="goals-image desktop-view" style="background-image: url('res/images/land-goal-two.jpg');"></div>
+                <div class="goals-image mobile-view" style="background-image: url('res/images/mobile-land-goal-two.jpg');"></div>
                 <div class="goals-content">
                     <h3 class = "goals-title">Conservation of Ecosystems and Freshwater Resources</h3>
                     <p>By 2020, ensure the conservation, restoration and sustainable use of terrestrial and inland
@@ -106,7 +121,8 @@
                 </div>
             </div>
             <div class="goals-card">
-                <div class="goals-image" style="background-image: url('res/images/land-goal-three.jpg');"></div>
+                <div class="goals-image desktop-view" style="background-image: url('res/images/land-goal-three.jpg');"></div>
+                <div class="goals-image mobile-view" style="background-image: url('res/images/mobile-land-goal-three.jpg');"></div>
                 <div class="goals-content">
                     <h3 class = "goals-title">Managing Invasive Species in Ecosystems</h3>
                     <p>
@@ -130,7 +146,8 @@
     <hr class="line">
 
     <section id="projects-select" class="projects-container">
-        <img src="res/images/land-projects-pulag.png" alt="Mt. Pulag" class="img">
+        <img src="res/images/land-projects-pulag.png" class="desktop-view" alt="Mt. Pulag" class="img">
+        <img src="res/images/mobile-land-project-pulag.jpg" class="mobile-view" style="filter: brightness(50%);" alt="Mt. Pulag" class="img">
         <div class="projects-captions">
             <h1>Protected Area Development and Management</h1>
             <p>This initiative focuses on conserving and managing the Philippines' protected areas, which are critical
@@ -144,7 +161,8 @@
         </div>
     </section>
     <section class="projects-container">
-        <img src="res/images/land-projects-eagle.png" alt="Ph Eagle" class="img">
+        <img src="res/images/land-projects-eagle.png" class="desktop-view" alt="Ph Eagle" class="img">
+        <img src="res/images/mobile-land-projects-eagle.jpg" class="mobile-view" style="filter: brightness(50%);" alt="Ph Eagle" class="img">
         <div class="projects-captions">
             <h1>Protection and Conservation of Wildlife</h1>
             <p>This program aims to safeguard the country's wildlife through habitat protection, anti-poaching efforts,
@@ -157,7 +175,8 @@
         </div>
     </section>
     <section class="projects-container">
-        <img src="res/images/land-projects-mountains.png" alt="Mountains" class="img">
+        <img src="res/images/land-projects-mountains.png" class="desktop-view" alt="Mountains" class="img">
+        <img src="res/images/mobile-land-projects-mountains.jpg" class="mobile-view" style="filter: brightness(50%);" alt="Mountains" class="img">
         <div class="projects-captions">
             <h1>Enhanced National Greening Program</h1>
             <p>This program is a large-scale reforestation effort aimed at restoring degraded forests, enhancing carbon
@@ -285,9 +304,6 @@
         </div>
 
     </footer>
-    <div class="scroll-container">
-        <a href="#top"><img src="res/icons/double_up.png" alt="Top" class="scroll-container-img"></a>
-    </div>
 </body>
 
 </html>
