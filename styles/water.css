@@ -57,7 +57,7 @@
 }
 
 .header-nav ul li a.active img {
-    opacity: 2;
+    opacity: 1;
 }
 
 .header-nav ul li a:hover img {
