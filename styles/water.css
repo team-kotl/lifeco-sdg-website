@@ -165,7 +165,7 @@
 }
 
 .problems-header h2 {
-    font-size: 50px;
+    font-size: 4vw;
     width: 100%;
     text-align: center;
     line-height: 0.1em;
@@ -173,13 +173,8 @@
     color: #1545a0;
 }
 
-.problems-header h2 {
-    background: #fff;
-}
-
 .problems-header span {
-    background: #fff;
-    padding: 0 100px;
+    padding: 0 3.3vw;
 }
 
 .problems-header h2::before,
@@ -463,7 +458,7 @@
 }
 
 .innovations-title h2 {
-    font-size: 50px;
+    font-size: 4vw;
     width: 100%;
     text-align: center;
     line-height: 0.1em;
@@ -472,8 +467,7 @@
 }
 
 .innovations-title span {
-    background: #fff;
-    padding: 0 100px;
+    padding: 0 3.3vw;
 }
 
 .innovations-title h2::before,
@@ -625,6 +619,7 @@
 .footer-container {
     background-image: url(../res/images/water-footer.png);
     color: white;
+    margin-top: 5%;
     padding: 40px 20px;
     display: flex;
     justify-content: space-between;
@@ -769,6 +764,11 @@
 }
 
 @media (max-width: 1024px) {
+
+    body {
+        background-color: #edfeff;
+    }
+
     .header-banner {
       height: 70vh;
     }
@@ -801,6 +801,15 @@
     .header-description {
       font-size: 20px;
     }
+
+    .problems-header h2 {
+        font-size: 3.9vw; 
+        margin: 50px 0 30px;
+    }
+
+    .problems-header span {
+        padding: 0 3vw; 
+    }
   
     .problems-container,
     .problems-container-inverted {
@@ -829,20 +838,32 @@
     }
 
     .projects-captions{
+        background-color: #69696959;
         margin-bottom: 20%;
         top: 20%;
     }
 
     .projects-captions h1 {
         font-size: 38px;
+        
     }
 
     .projects-captions p {
         font-size: 24px;
+        
     }
 
-    .philippine-goals-header{
-        background-image: url(../res/images/Mobile-Philippine-goals-header.jpg);
+    .philippine-goals-header {
+        background-image: url(../res/images/Mobile-Phil-goalsHeader.jpg);
+    }
+
+    .innovations-title h2 {
+        font-size: 3.9vw; 
+        margin: 50px 0 30px;
+    }
+
+    .innovations-title span {
+        padding: 0 3vw; 
     }
   }
   
