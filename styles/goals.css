@@ -88,7 +88,8 @@ body{
 
 .goals-card {
     width: 30%;
-    height: 570px; 
+    height: 60%; 
+    padding-bottom: 40px;
     margin: 20px;
     background-color: #f8f8f8; 
     border-radius: 15px;
@@ -135,4 +136,36 @@ body{
     margin-bottom: 10px;
     font-weight: bold;
     text-align: center;
+}
+
+
+.desktop-view {
+    display: block;
+}
+
+.mobile-view {
+    display: none;
+}
+
+
+@media (max-width: 767px) {
+
+    .philippine-goals-header{
+        background-color: #ffffff9d;
+    }
+
+    .desktop-view {
+        display: none;
+    }
+
+    .mobile-view {
+        display: block;
+    }
+
+    .goals-card {
+        width: 55%; 
+        height: 100%;
+        margin: 10px 0; 
+    }
+
 }
