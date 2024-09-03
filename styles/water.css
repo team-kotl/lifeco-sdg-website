@@ -57,7 +57,7 @@
 }
 
 .header-nav ul li a.active img {
-    opacity: 2;
+    opacity: 1;
 }
 
 .header-nav ul li a:hover img {
@@ -291,7 +291,7 @@
     margin: 0;
 }
 
-.goals-content title {
+.goals-content .goals-title {
     color: #1A54BA;
     font-size: 20px;
     display: block;
@@ -309,7 +309,7 @@
     align-items: center; 
 }
 
-.goals-see-more button {
+.goals-see-more .button {
     padding: 12px 30px;
     background: #1A54BA;
     color: white;
@@ -320,9 +320,10 @@
     font-weight: bold;
     transition: 0.3s ease;
     box-shadow: 0 4px 10px rgba(26, 84, 186, 0.3);
+    text-decoration: none;
 }
 
-.goals-see-more button:hover {
+.goals-see-more .banner:hover {
     background: #1545a0;
 }
 
@@ -389,7 +390,7 @@
     margin: 0;
 }
 
-.projects-container button {
+.projects-container .button {
     color: rgb(255, 255, 255);
     border: 2px solid #ffffff;
     background-color: transparent;
@@ -404,9 +405,10 @@
     border-radius: 90px;
     margin-left: 50px;
     margin-top: 20px;
+    text-decoration: none;
 }
 
-.projects-container button:hover {
+.projects-container .button:hover {
     background-color: #1545a0;
     border: 2px solid #1545a0;
 }
@@ -580,7 +582,7 @@
 }
 
 .book-flip:nth-child(8) .cover-page {
-    background-image: url(../res/images/water-innovasea-image.png);
+    background-image: url(../res/images/water-seakura-image.png);
     background-size: cover;
     background-position: center;
 }
@@ -590,7 +592,7 @@
     position: absolute;
     top: 0;
     right: 0;
-    height: 94%;
+    height: 50%;
     margin: 30px;
 }
 
