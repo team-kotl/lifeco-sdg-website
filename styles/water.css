@@ -575,10 +575,8 @@
 .footer-container {
     background-image: url(../res/images/water-footer.png);
     color: white;
-    margin-top: 5%;
     padding: 40px 20px;
     display: flex;
-    justify-content: space-between;
     align-items: flex-start;
     flex-wrap: wrap;
     box-shadow: 0 -4px 8px rgba(250, 10, 10, 0.1);
@@ -586,11 +584,23 @@
     width: auto;
 }
 
+.footer-logo-container {
+    flex-basis: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-logo {
+    width: 200px;
+    height: auto;
+}
+
 .footer-contact {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    flex-basis: 25%;
+    flex-basis: 20%;
     text-align: left;
     font-size: 20px;
 }
@@ -606,10 +616,10 @@
 }
 
 .footer-slogan-container {
-    flex-basis: 30%;
+    flex-basis: 40%;
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    margin: auto;
     border: 1px solid #ffffff;
     padding: 30px;
     margin-top: 30px;
@@ -642,7 +652,7 @@
 }
 
 .footer-buttons a:hover {
-    background-color: #6FA1FB;
+    background-color: #1A54BA;
     border: 2px solid #ffffff;
 }
 
@@ -654,25 +664,7 @@
     color: #fffbfb;
 }
 
-.footer-logo {
-    width: 30%;
-    height: auto;
-    margin: auto;
-}
-
-.desktop-view {
-    display: block;
-}
-
-.desktop-problem2-view {
-    display: grid;
-}
-
 .mobile-view {
-    display: none;
-}
-
-.revert-problem2-view {
     display: none;
 }
 
@@ -730,9 +722,16 @@
         width: 100%;
     }
 
+    .footer-logo-container {
+        flex-basis: 20%;
+    }
+
     .footer-logo {
-        width: 30%;
-        height: auto;
+        width: 100%;
+    }
+
+    .footer-slogan-container {
+        flex-basis: 50%;
     }
 }
 
