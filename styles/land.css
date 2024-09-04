@@ -546,7 +546,7 @@ body {
 }
 
 .book-flip:nth-child(1) .cover-page {
-    background-image: url(../res/images/carland-landlife-image.png);
+    background-image: url(../res/images/land-landlife-image.png);
     background-size: cover;
     background-position: center;
 }
