@@ -340,7 +340,7 @@
     text-align: center;
     color: white;
     margin: 0;
-    height: 425px;
+    height: 65vh;
     overflow: hidden;
 }
 
@@ -458,7 +458,7 @@
 }
 
 .innovations-title h2 {
-    font-size: 4vw;
+    font-size: 3.5vw;
     width: 100%;
     text-align: center;
     line-height: 0.1em;
@@ -467,7 +467,7 @@
 }
 
 .innovations-title span {
-    padding: 0 3.3vw;
+    padding: 0 2.7vw;
 }
 
 .innovations-title h2::before,
@@ -760,10 +760,14 @@
       grid-template-columns: 1fr;
       height: auto;
     }
+
+    .projects-container {
+        height: 72vh;
+    }
     
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 767px) {
 
     body {
         background-color: #edfeff;
@@ -772,12 +776,11 @@
     .header-banner {
       height: 70vh;
     }
-
-    .revert-problem2-desktop-img {
+    .desktop-view {
         display: none;
     }
 
-    .desktop-view {
+    .revert-problem2-desktop-img {
         display: none;
     }
 
@@ -830,11 +833,7 @@
     }
 
     .projects-container {
-        height: auto;
-    }
-  
-    .projects-container img {
-      height: auto;
+        height: 65vh;
     }
 
     .projects-captions{
@@ -858,23 +857,56 @@
     }
 
     .innovations-title h2 {
-        font-size: 3.9vw; 
+        font-size: 3.3vw; 
         margin: 50px 0 30px;
     }
 
     .innovations-title span {
         padding: 0 3vw; 
     }
+
+    .book-flip:nth-child(1) .cover-page {
+        background-image: url(../res/images/cartoon-water-innovasea-image.png);
+    }
+    
+    .book-flip:nth-child(2) .cover-page {
+        background-image: url(../res/images/cartoon-water-upstreamtech-image.png);
+    }
+    
+    .book-flip:nth-child(3) .cover-page {
+        background-image: url(../res/images/cartoon-water-shellcatch-image.png);
+    }
+    
+    .book-flip:nth-child(4) .cover-page {
+        background-image: url(../res/images/cartoon-water-ashored-image.png);
+    }
+    
+    .book-flip:nth-child(5) .cover-page {
+        background-image: url(../res/images/cartoon-water-xpertsea-image.png);
+    }
+    
+    .book-flip:nth-child(6) .cover-page {
+        background-image: url(../res/images/cartoon-water-knipbi-image.png); 
+    }
+    
+    .book-flip:nth-child(7) .cover-page {
+        background-image: url(../res/images/cartoon-water-monitorfish-image.png);
+    }
+    
+    .book-flip:nth-child(8) .cover-page {
+        background-image: url(../res/images/cartoon-water-seakura-image.png);
+    }
   }
   
-  @media (max-width: 767px) {
+  @media (max-width: 480px) {
+
     .header-banner {
-      height: 60vh;
+      height: 100vh;
     }
   
     .header-content {
       padding: 15px;
-      top: 20%;
+      top: 10vh;
     }
   
     .header-mainText {
@@ -914,8 +946,13 @@
       margin: 15px auto;
     }
   
-    .projects-container img {
-      height: 200px;
+    .projects-container {
+      height: 160vh;
+    }
+
+    .projects-captions {
+        top: 10vh;
+        font-size: 18px;
     }
   
     .footer-container {
@@ -928,4 +965,6 @@
       flex-basis: 100%;
       margin-bottom: 20px;
     }
+
+    
 }
