@@ -322,10 +322,9 @@
     text-align: center;
     color: white;
     margin: 0;
-    height: 65vh;
+    height: 70vh;
     overflow: hidden;
 }
-
 
 .projects-header h2 {
     color: #1545a0;
@@ -713,7 +712,11 @@
     }
 
     .projects-container {
-        height: 72vh;
+        height: auto;
+    }
+
+    .projects-captions {
+        top: 10%;
     }
 
     .innovations-title h2::before,
