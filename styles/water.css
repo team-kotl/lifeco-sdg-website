@@ -312,8 +312,8 @@
     text-decoration: none;
 }
 
-.goals-see-more .banner:hover {
-    background: #1545a0;
+.goals-see-more .button:hover {
+    background: #6098ff;
 }
 
 /* Government Projects Section */
@@ -587,13 +587,6 @@
     width: auto;
 }
 
-.footer-logo {
-    font-size: 30px;
-    font-weight: bold;
-    letter-spacing: 2px;
-    flex-basis: 25%;
-}
-
 .footer-contact {
     display: flex;
     flex-direction: column;
@@ -662,6 +655,11 @@
     color: #fffbfb;
 }
 
+.footer-logo {
+    width: 30%;
+    height: auto;
+}
+
 .desktop-view {
     display: block;
 }
@@ -726,6 +724,11 @@
     .innovations-title span {
         padding: 0;
         width: 100%;
+    }
+
+    .footer-logo {
+        width: 30%;
+        height: auto;
     }
 }
 
@@ -922,10 +925,8 @@
     }
 
     .footer-logo {
-        font-size: 30px;
-        font-weight: bold;
-        letter-spacing: 2px;
-        grid-column: span 1;
+        width: 70%;
+        height: auto;
     }
 
     .footer-contact {
