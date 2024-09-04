@@ -46,7 +46,7 @@
 }
 
 .header-nav ul li a.active img {
-    opacity: 2;
+    opacity: 1;
 }
 
 .header-nav ul li a:hover img {
@@ -371,7 +371,7 @@
     margin: 0;
 }
 
-.projects-container button {
+.projects-container a p {
     color: rgb(255, 255, 255);
     border: 2px solid #ffffff;
     background-color: transparent;
@@ -388,7 +388,7 @@
     margin-top: 20px;
 }
 
-.projects-container button:hover {
+.projects-container a p:hover {
     background-color: #186423;
     border: 2px solid #186423;
 }
