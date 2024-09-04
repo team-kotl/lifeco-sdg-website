@@ -22,10 +22,10 @@
     </nav>
 
     <section class="header-banner">
-        <video autoplay loop muted playsinline class="header-background-video desktop-view">
+        <video autoplay loop muted playsinline class="header-background-video desktop-view" style="filter:brightness(70%);">
             <source src="res/videos/land-header-video.mp4" alt="Land Life Background Video" type="video/mp4">
         </video>
-        <video autoplay loop muted playsinline class="header-background-video mobile-view">
+        <video autoplay loop muted playsinline class="header-background-video mobile-view" style="filter:brightness(70%);">
             <source src="res/videos/Mobile-Land-header-video.mp4" alt="Cartoon Land Life Background Video" type="video/mp4">
         </video>
         <div class="header-content">
@@ -43,12 +43,16 @@
         </div>
     </section>
     
-    <div class="scroll-container">
-        <a href="#top"><img src="res/icons/double_up.png" alt="Top" class="scroll-container-img"></a>
+    <div class="scroll-wrapper">
+        <div class="scroll-container">
+            <a href="#top">
+                <img src="res/icons/double_up.png" alt="Top" class="scroll-container-img">
+            </a>
+        </div>
     </div>
 
     <header class="problems-header">
-        <h2>PROBLEMS</h2>
+        <h2><span>PROBLEMS</span></h2>
     </header>
 
     <section id="problems-select" class="problems-container">

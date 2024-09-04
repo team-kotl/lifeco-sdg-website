@@ -12,6 +12,7 @@
 }
 
 body {
+    display: unset;
     position: relative;
 }
 
@@ -23,7 +24,7 @@ body {
     display: flex;
     align-items: center;
     color: white;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.40));
+    z-index: 1000;
 }
 
 .header-nav {
@@ -31,7 +32,7 @@ body {
     top: 0;
     right: 0;
     padding: 10px;
-    z-index: 1000;
+    z-index: 1001;
 }
 
 .header-nav ul {
@@ -176,12 +177,7 @@ body {
     color: #186423;
 }
 
-.problems-header h2 {
-    background: #fff;
-}
-
 .problems-header span {
-    background: #fff;
     padding: 0 100px;
 }
 
@@ -335,13 +331,6 @@ body {
     background: #2dbb43;
 }
 
-@media(min-aspect-ratio: 16/9) {
-    .banner video {
-        width: 100%;
-        height: auto;
-    }
-}
-
 .projects-container {
     position: relative;
     text-align: center;
@@ -419,39 +408,39 @@ body {
     border: 2px solid #186423;
 }
 
+.scroll-wrapper {
+    position: fixed;
+    bottom: 70px;
+    right: 10px;
+    z-index: 999;
+}
+
 .scroll-container {
     position: absolute;
-    top: 0;
-    right: 0;
-    height: 100%;
-    margin-right: 20px;
-    margin-bottom: 20px;
-    z-index: 1001;
+    right: 10px;
+    border-radius: 50%;
+    background-color: #186423;
+    padding: 5px;
+    height: 55px;
+    width: 55px;
+    transition: 150ms;
+    opacity: .8;
 }
 
-.scroll-container img {
-    height: 45px;
-    width: 45px;
-    border-radius: 10px;
+.scroll-container:hover {
+    opacity: .5;
 }
 
-.scroll-container:before {
-    content: '';
-    display: block;
-    height: 100vh;
-}
-
-.scroll-container a {
-    position: sticky;
-    top: 900px;
-    cursor: pointer;
+.scroll-container img, .scroll-container a {
+    height: auto;
+    width: 100%;
 }
 
 #innovations {
-    min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 30px;
 }
 
 .innovations-title {
@@ -473,7 +462,6 @@ body {
 }
 
 .innovations-title span {
-    background: #fff;
     padding: 0 100px;
 }
 
@@ -598,7 +586,6 @@ body {
     color: white;
     padding: 40px 20px;
     display: flex;
-    justify-content: space-between;
     align-items: flex-start;
     flex-wrap: wrap;
     box-shadow: 0 -4px 8px rgba(250, 10, 10, 0.1);
@@ -636,7 +623,7 @@ body {
     flex-basis: 30%;
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    margin: auto;
     border: 1px solid #ffffff;
     padding: 30px;
     margin-top: 30px;
@@ -685,7 +672,7 @@ body {
     display: none;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 1023px) {
     .desktop-view {
         display: none;
     }
@@ -705,6 +692,7 @@ body {
     }
     
     body {
+        background-color: rgb(218, 255, 234);
         margin: 0;
         padding: 0;
     }
@@ -730,6 +718,10 @@ body {
         grid-template-columns: auto auto;
     }
 
+    .problems-header span {
+        padding: 0;
+    }
+
     .problems-header h2::before, .problems-header h2::after {
         display: none;
     }
@@ -738,7 +730,7 @@ body {
         display: flex;
         flex-direction: column;
         width: 100%;
-        padding: 0;
+        padding: 0 40px;
         height: auto;
     }
     
@@ -746,7 +738,7 @@ body {
         display: flex;
         flex-direction: column-reverse;
         width: 100%;
-        padding: 0;
+        padding: 0 40px;
         height: auto;
         margin-top: 0;
         margin-bottom: 0;
@@ -778,7 +770,8 @@ body {
     
     /* Philippine Goals Section */
     .philippine-goals-header {
-        background-image: url(../res/images/mobile-land-goal-header.png);
+        background-image: url("../res/images/mobile-land-goal-header.png");
+        margin-top: 30px;
         height: 350px;
         display: flex;
     }
@@ -795,8 +788,9 @@ body {
     }
     
     .goals-card {
-        width: 90%;
-        margin: 5%;
+        width: 50%;
+        margin: auto;
+        margin-bottom: 30px;
     }
     
     .goals-content p {
@@ -815,7 +809,7 @@ body {
     
     .projects-container {
         margin: 0;
-        height: 100vh;
+        height: 33vh;
     }
     
     .projects-captions h1 {
@@ -835,24 +829,13 @@ body {
         object-fit: cover;
         width: 100%;
         height: 100%;
-        object-position: center;
+        object-position: top;
         margin: 0;
     }
     
     .projects-container button {
         font-size: 15px;
         margin: 20px 0px 0px 0px;
-    }
-    
-    .scroll-container {
-        position: sticky;
-        transform: translateX(85vw) translateY(92vh);
-        height: 45px;
-        width: 45px;
-    }
-    
-    .scroll-container:before {
-        display: none;
     }
 
     .innovations-title {
@@ -878,40 +861,40 @@ body {
     }
 
     .book-flip:nth-child(1) .cover-page {
-        background-image: url(../res/images/cartoon-land-landlife-image.png);
+        background-image: url("../res/images/cartoon-land-landlife-image.png");
     }
     
     .book-flip:nth-child(2) .cover-page {
-        background-image: url(../res/images/cartoon-land-ayala-image.png);
+        background-image: url("../res/images/cartoon-land-ayala-image.png");
     }
     
     .book-flip:nth-child(3) .cover-page {
-        background-image: url(../res/images/cartoon-land-ekogrid-image.png);
+        background-image: url("../res/images/cartoon-land-ekogrid-image.png");
     }
     
     .book-flip:nth-child(4) .cover-page {
-        background-image: url(../res/images/cartoon-land-rainforest-image.png);
+        background-image: url("../res/images/cartoon-land-rainforest-image.png");
     }
     
     .book-flip:nth-child(5) .cover-page {
-        background-image: url(../res/images/cartoon-land-vestaron-image.png);
+        background-image: url("../res/images/cartoon-land-vestaron-image.png");
     }
     
     .book-flip:nth-child(6) .cover-page {
-        background-image: url(../res/images/cartoon-land-covercress-image.png); 
+        background-image: url("../res/images/cartoon-land-covercress-image.png"); 
     }
     
     .book-flip:nth-child(7) .cover-page {
-        background-image: url(../res/images/cartoon-land-tesselo-image.png);
+        background-image: url("../res/images/cartoon-land-tesselo-image.png");
     }
     
     .book-flip:nth-child(8) .cover-page {
-        background-image: url(../res/images/cartoon-land-dendra-image.png);
+        background-image: url("../res/images/cartoon-land-dendra-image.png");
     }
     
     .footer-container {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
         padding: 15px 15px;
         gap: 10px;
         margin-top: 30px;
@@ -921,8 +904,7 @@ body {
         font-size: 30px;
         font-weight: bold;
         letter-spacing: 2px;
-        grid-column-start: 1;
-        grid-column-start: 1;
+        grid-column: span 1;
     }
     
     .footer-contact {
@@ -930,12 +912,16 @@ body {
         flex-direction: column;
         text-align: left;
         font-size: 20px;
-        grid-column-start: 2;
-        grid-column-start: 2;
+        grid-column: span 1;
+    }
+
+    .footer-slogan {
+        font-size: 24px;
     }
     
     .footer-slogan-container {
-        grid-column: span 2;
+        gap: 10px;
+        grid-column: span 1;
     }
     
     .footer-buttons a:hover {
@@ -943,6 +929,42 @@ body {
         border: 2px solid #ffffff;
     }
     
+    .footer-copyright {
+        grid-column: span 3;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .problems-container {
+        padding: 0;
+    }
+    
+    .problems-container-inverted {
+        padding: 0;
+    }
+
+    .goals-card {
+        width: 90%;
+        margin: 5%;
+    }
+    
+    .projects-container {
+        height: 100vh;
+    }
+    
+    .projects-captions h1 {
+        padding-top: 20vh;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .footer-slogan-container {
+        grid-column: span 2;
+    }
+
     .footer-copyright {
         grid-column: span 2;
     }
