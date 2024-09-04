@@ -1,15 +1,4 @@
-@font-face {
-    font-family: 'Inter';
-    src: url(../res/fonts/Inter-VariableFont_opsz\,wght.ttf);
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    font-family: 'Inter', sans-serif;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-}
+@import url("style.css");
 
 .header-banner {
     width: 100%;
@@ -19,7 +8,7 @@
     display: flex;
     align-items: center;
     color: white;
-    background-image: linear-gradient(rgba(0,0,0,0.40),rgba(0,0,0,0.40));
+    z-index: 1000;
 }
 
 .header-nav {
@@ -27,7 +16,7 @@
     top: 0;
     right: 0;
     padding: 10px;
-    z-index: 1000;
+    z-index: 1001;
 }
 
 .header-nav ul {
@@ -49,11 +38,11 @@
 }
 
 .header-nav ul li a img {
-    width: auto;  
-    height: 50px;  
+    width: auto;
+    height: 50px;
     opacity: 0.5;
     transition: opacity 0.3s ease;
-    object-fit: contain;  
+    object-fit: contain;
 }
 
 .header-nav ul li a.active img {
@@ -67,7 +56,7 @@
 .header-nav ul li a::after {
     content: attr(data-tooltip);
     position: absolute;
-    bottom: -30px; 
+    bottom: -30px;
     left: 50%;
     transform: translateX(-50%);
     background-color: rgba(0, 0, 0, 0.8);
@@ -97,8 +86,8 @@
     text-align: center;
     max-width: 900px;
     padding: 20px;
-    margin: 0 auto; 
-    top: 30%; 
+    margin: 0 auto;
+    top: 30%;
     left: 50%;
     transform: translateX(-50%);
     position: absolute;
@@ -165,7 +154,7 @@
 }
 
 .problems-header h2 {
-    font-size: 4vw;
+    font-size: 50px;
     width: 100%;
     text-align: center;
     line-height: 0.1em;
@@ -181,7 +170,7 @@
 .problems-header h2::after {
     content: "";
     display: inline-block;
-    width: 33%; 
+    width: 33%;
     border-bottom: 4px solid #1545a0;
     vertical-align: middle;
 }
@@ -200,7 +189,7 @@
     text-align: center;
     font-size: 45px;
     padding: 10px 30px;
-    margin-top:50px;
+    margin-top: 50px;
 }
 
 .problems-captions .line {
@@ -236,7 +225,7 @@
 .philippine-goals-header h2 {
     color: white;
     font-size: 60px;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     text-transform: uppercase;
     letter-spacing: 5px;
 }
@@ -251,12 +240,12 @@
 
 .goals-card {
     width: 30%;
-    height: 570px; 
+    height: 570px;
     margin: 20px;
-    background-color: #f8f8f8; 
+    background-color: #f8f8f8;
     border-radius: 15px;
     overflow: hidden;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     display: flex;
     flex-direction: column;
@@ -264,7 +253,7 @@
 
 .goals-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }
 
 .goals-image {
@@ -303,10 +292,10 @@
 .goals-see-more {
     text-align: center;
     margin-top: 30px;
-    width: 100%; 
+    width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
 }
 
 .goals-see-more .button {
@@ -325,13 +314,6 @@
 
 .goals-see-more .banner:hover {
     background: #1545a0;
-}
-
-@media(min-aspect-ratio: 16/9){
-    .banner video{
-        width: 100%;
-        height: auto;
-    }
 }
 
 /* Government Projects Section */
@@ -384,6 +366,7 @@
 
 .projects-container img {
     object-fit: cover;
+    filter: brightness(70%);
     width: 100%;
     height: 100%;
     object-position: center;
@@ -413,34 +396,36 @@
     border: 2px solid #1545a0;
 }
 
+.scroll-wrapper {
+    position: fixed;
+    bottom: 70px;
+    right: 10px;
+    z-index: 999;
+}
+
 .scroll-container {
     position: absolute;
-    top: 0;
-    right: 0;
-    height: 93%;
-    margin: 30px;
+    right: 10px;
+    border-radius: 50%;
+    background-color: #1545a0;
+    padding: 5px;
+    height: 55px;
+    width: 55px;
+    transition: 150ms;
+    opacity: .8;
 }
 
-.scroll-container img {
-    height: 45px;
-    width: 45px;
-    background-color: #ffffff;
-    border-radius: 10px;
+.scroll-container:hover {
+    opacity: .5;
 }
 
-.scroll-container:before {
-    content: '';
-    display: block;
-    height: 100vh;
-}
-
+.scroll-container img,
 .scroll-container a {
-    position: sticky;
-    top: 900px;
-    cursor: pointer;
+    height: auto;
+    width: 100%;
 }
 
-/* Innovations Section */ 
+/* Innovations Section */
 #innovations {
     min-height: 100vh;
     display: flex;
@@ -449,7 +434,7 @@
 }
 
 .innovations-title {
-    height: 180px; 
+    height: 180px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -474,7 +459,7 @@
 .innovations-title h2::after {
     content: "";
     display: inline-block;
-    width: 33%; 
+    width: 33%;
     border-bottom: 4px solid #1545a0;
     vertical-align: middle;
 }
@@ -497,7 +482,7 @@
     height: 300px;
     background-color: whitesmoke;
     perspective: 1000px;
-    overflow: hidden; 
+    overflow: hidden;
 }
 
 .book-content {
@@ -512,12 +497,12 @@
 }
 
 .book-flip p {
-    font-size: 16px; 
-    font-weight: normal; 
-    margin: 0px; 
-    text-align: left; 
+    font-size: 16px;
+    font-weight: normal;
+    margin: 0px;
+    text-align: left;
     overflow: hidden;
-    height: 100%; 
+    height: 100%;
     width: 80%;
 }
 
@@ -570,7 +555,7 @@
 }
 
 .book-flip:nth-child(6) .cover-page {
-    background-image: url(../res/images/water-knipbi-image.png); 
+    background-image: url(../res/images/water-knipbi-image.png);
     background-size: cover;
     background-position: center;
 }
@@ -585,34 +570,6 @@
     background-image: url(../res/images/water-seakura-image.png);
     background-size: cover;
     background-position: center;
-}
-
-/* Scroll Top */
-.scroll-container {
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 50%;
-    margin: 30px;
-}
-
-.scroll-container img {
-    height: 45px;
-    width: 45px;
-    background-color: #ffffff;
-    border-radius: 10px;
-}
-
-.scroll-container:before {
-    content: '';
-    display: block;
-    height: 100vh;
-}
-
-.scroll-container a {
-    position: sticky;
-    top: 900px;
-    cursor: pointer;
 }
 
 /* Footer */
@@ -705,33 +662,6 @@
     color: #fffbfb;
 }
 
-.scroll-container {
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 600%;
-    margin: 30px;
-}
-
-.scroll-container img {
-    height: 45px;
-    width: 45px;
-    background-color: #ffffff;
-    border-radius: 10px;
-}
-
-.scroll-container:before {
-    content: '';
-    display: block;
-    height: 100vh;
-}
-
-.scroll-container a {
-    position: sticky;
-    top: 900px;
-    cursor: pointer;
-}
-
 .desktop-view {
     display: block;
 }
@@ -749,222 +679,314 @@
 }
 
 @media (max-width: 1220px) {
-    .revert-problem2-view {
-        display: block;
+
+    @font-face {
+        font-family: 'Poppins';
+        src: url(../res/fonts/Poppins-Regular.ttf);
     }
-    .desktop-problem2-view {
+
+    * {
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .header-content {
+        top: 20%;
+    }
+
+    .problems-header span {
+        padding: 0;
+    }
+
+    .problems-header h2::before,
+    .problems-header h2::after {
         display: none;
     }
 
     .problems-container {
-      grid-template-columns: 1fr;
-      height: auto;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .problems-container-inverted {
+        display: flex;
+        flex-direction: column-reverse;
+        height: auto;
     }
 
     .projects-container {
         height: 72vh;
     }
-    
-}
 
-@media (max-width: 767px) {
-
-    body {
-        background-color: #edfeff;
-    }
-
-    .header-banner {
-      height: 70vh;
-    }
-    .desktop-view {
+    .innovations-title h2::before,
+    .innovations-title h2::after {
         display: none;
     }
 
-    .revert-problem2-desktop-img {
+    .innovations-title span {
+        padding: 0;
+        width: 100%;
+    }
+}
+
+@media (max-width: 1023px) {
+    .desktop-view {
         display: none;
     }
 
     .mobile-view {
         display: block;
     }
-  
+
+    body {
+        background-color: rgb(218, 255, 234);
+        margin: 0;
+        padding: 0;
+    }
+
     .header-content {
-      padding: 20px;
-      top: 20%;
+        top: 15%;
     }
-  
+
     .header-mainText {
-      font-size: 60px;
+        font-size: 80px;
     }
-  
+
     .header-subText {
-      font-size: 30px;
+        font-size: 20px;
     }
-  
+
     .header-description {
-      font-size: 20px;
+        font-size: 15px;
     }
 
-    .problems-header h2 {
-        font-size: 3.9vw; 
-        margin: 50px 0 30px;
+    .header-button {
+        display: grid;
+        grid-template-columns: auto auto;
     }
 
-    .problems-header span {
-        padding: 0 3vw; 
+    .problems-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 0 40px;
+        height: auto;
     }
-  
-    .problems-container,
+
     .problems-container-inverted {
-      grid-template-columns: 1fr;
-      height: auto;
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+        padding: 0 40px;
+        height: auto;
+        margin-top: 0;
+        margin-bottom: 0;
     }
-  
+
+    .problems-container img,
+    .problems-container-inverted img {
+        object-fit: cover;
+        width: 80vw;
+        height: 40vh;
+        border-radius: 60px;
+        margin: auto;
+    }
+
     .problems-captions h2 {
-      font-size: 38px;
+        text-align: center;
+        font-size: 35px;
+        margin-top: 20px;
     }
-  
+
+    .problems-captions .line {
+        margin: 5px auto;
+    }
+
     .problems-captions p {
-      font-size: 24px;
-    }
-  
-    .goals-card {
-      width: 45%;
-    }
-
-    .projects-container {
-        height: 65vh;
-    }
-
-    .projects-captions{
-        background-color: #69696959;
-        margin-bottom: 20%;
-        top: 20%;
-    }
-
-    .projects-captions h1 {
-        font-size: 38px;
-        
-    }
-
-    .projects-captions p {
-        font-size: 24px;
-        
+        font-size: 16px;
+        text-align: center;
     }
 
     .philippine-goals-header {
-        background-image: url(../res/images/Mobile-Phil-goalsHeader.jpg);
+        background-image: url("../res/images/Mobile-Phil-goalsHeader.jpg");
+    }
+
+    .philippine-goals-header h2 {
+        font-size: 60px;
+        text-align: center;
+    }
+
+    .goals-container {
+        margin: 30px auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .goals-card {
+        width: 50%;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+
+    .goals-content p {
+        font-size: 18px;
+    }
+
+    .goals-content title {
+        color: #186423;
+        font-size: 20px;
+    }
+
+    .goals-see-more {
+        text-align: center;
+        width: 100%;
+    }
+
+    .projects-container {
+        margin: 0;
+        height: 50vh;
+    }
+
+    .projects-captions h1 {
+        text-shadow: 5px 3px rgba(0, 0, 0, 0.3);
+        margin-left: 0;
+        font-size: 30px;
+    }
+
+    .projects-captions p {
+        text-shadow: 1px 1px rgba(0, 0, 0, 0.3);
+        font-size: 18px;
+        padding-left: 0;
+        margin-top: 20px;
+    }
+
+    .projects-container img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        object-position: top;
+        margin: 0;
+    }
+
+    .projects-container button {
+        font-size: 15px;
+        margin: 20px 0px 0px 0px;
+    }
+
+    .innovations-title {
+        height: 180px;
     }
 
     .innovations-title h2 {
-        font-size: 3.3vw; 
-        margin: 50px 0 30px;
-    }
-
-    .innovations-title span {
-        padding: 0 3vw; 
+        font-size: 50px;
     }
 
     .book-flip:nth-child(1) .cover-page {
-        background-image: url(../res/images/cartoon-water-innovasea-image.png);
+        background-image: url("../res/images/cartoon-water-innovasea-image.png");
     }
-    
+
     .book-flip:nth-child(2) .cover-page {
-        background-image: url(../res/images/cartoon-water-upstreamtech-image.png);
+        background-image: url("../res/images/cartoon-water-upstreamtech-image.png");
     }
-    
+
     .book-flip:nth-child(3) .cover-page {
-        background-image: url(../res/images/cartoon-water-shellcatch-image.png);
+        background-image: url("../res/images/cartoon-water-shellcatch-image.png");
     }
-    
+
     .book-flip:nth-child(4) .cover-page {
-        background-image: url(../res/images/cartoon-water-ashored-image.png);
+        background-image: url("../res/images/cartoon-water-ashored-image.png");
     }
-    
+
     .book-flip:nth-child(5) .cover-page {
-        background-image: url(../res/images/cartoon-water-xpertsea-image.png);
+        background-image: url("../res/images/cartoon-water-xpertsea-image.png");
     }
-    
+
     .book-flip:nth-child(6) .cover-page {
-        background-image: url(../res/images/cartoon-water-knipbi-image.png); 
+        background-image: url("../res/images/cartoon-water-knipbi-image.png");
     }
-    
+
     .book-flip:nth-child(7) .cover-page {
-        background-image: url(../res/images/cartoon-water-monitorfish-image.png);
+        background-image: url("../res/images/cartoon-water-monitorfish-image.png");
     }
-    
+
     .book-flip:nth-child(8) .cover-page {
-        background-image: url(../res/images/cartoon-water-seakura-image.png);
-    }
-  }
-  
-  @media (max-width: 480px) {
-
-    .header-banner {
-      height: 100vh;
-    }
-  
-    .header-content {
-      padding: 15px;
-      top: 10vh;
-    }
-  
-    .header-mainText {
-      font-size: 45px;
-    }
-  
-    .header-subText {
-      font-size: 24px;
-    }
-  
-    .header-description {
-      font-size: 16px;
-    }
-  
-    .header-buttons {
-      padding: 8px 18px;
-      margin: 10px 0px;
-      font-size: 14px;
-    }
-  
-    .problems-container,
-    .problems-container-inverted {
-      grid-template-columns: 1fr;
-      height: auto;
-    }
-  
-    .problems-captions h2 {
-      font-size: 28px;
-    }
-  
-    .problems-captions p {
-      font-size: 18px;
-    }
-  
-    .goals-card {
-      width: 90%;
-      margin: 15px auto;
-    }
-  
-    .projects-container {
-      height: 160vh;
+        background-image: url("../res/images/cartoon-water-seakura-image.png");
     }
 
-    .projects-captions {
-        top: 10vh;
-        font-size: 18px;
-    }
-  
     .footer-container {
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-    }
-  
-    .footer-logo, .footer-contact, .footer-slogan-container {
-      flex-basis: 100%;
-      margin-bottom: 20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 15px 15px;
+        gap: 10px;
+        margin-top: 30px;
     }
 
-    
+    .footer-logo {
+        font-size: 30px;
+        font-weight: bold;
+        letter-spacing: 2px;
+        grid-column: span 1;
+    }
+
+    .footer-contact {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        font-size: 20px;
+        grid-column: span 1;
+    }
+
+    .footer-slogan {
+        font-size: 24px;
+    }
+
+    .footer-slogan-container {
+        gap: 10px;
+        grid-column: span 1;
+    }
+
+    .footer-buttons a:hover {
+        background-color: #73ce84;
+        border: 2px solid #ffffff;
+    }
+
+    .footer-copyright {
+        grid-column: span 3;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .problems-container {
+        padding: 0;
+    }
+
+    .problems-container-inverted {
+        padding: 0;
+    }
+
+    .goals-card {
+        width: 90%;
+        margin: 5%;
+    }
+
+    .projects-container {
+        height: 100vh;
+    }
+
+    .projects-captions h1 {
+        padding-top: 10vh;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .footer-slogan-container {
+        grid-column: span 2;
+    }
+
+    .footer-copyright {
+        grid-column: span 2;
+    }
 }
