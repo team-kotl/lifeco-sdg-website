@@ -322,7 +322,7 @@
     text-align: center;
     color: white;
     margin: 0;
-    height: 70vh;
+    height: 50vh;
     overflow: hidden;
 }
 
@@ -657,6 +657,7 @@
 .footer-logo {
     width: 30%;
     height: auto;
+    margin: auto;
 }
 
 .desktop-view {
