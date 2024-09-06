@@ -84,7 +84,6 @@
 
 .header-content {
     text-align: center;
-    max-width: 900px;
     padding: 20px;
     margin: 0 auto;
     top: 20vh;
@@ -197,7 +196,7 @@
 }
 
 .problems-captions p {
-    font-size: 2vw;
+    font-size: 1.5vw;
     padding: 30px 30px;
     text-align: center;
     padding: 20px;
@@ -663,7 +662,7 @@
     display: none;
 }
 
-@media (max-width: 1220px) {
+@media screen and (max-width: 1220px) {
 
     @font-face {
         font-family: 'Poppins';
@@ -675,7 +674,7 @@
     }
 
     .header-content {
-        top: 10%;
+        top: 20vh;
     }
 
     .problems-header span {
@@ -703,9 +702,25 @@
         height: 72vh;
     }
 
+    .projects-header h2 {
+        font-size: 5vw;
+    }
+
+    .projects-captions h1 {
+        font-size: 7vh;
+    }
+
+    .projects-captions p {
+        font-size: 3vh;
+    }
+
     .innovations-title h2::before,
     .innovations-title h2::after {
         display: none;
+    }
+
+    .innovations-title h2 {
+        font-size: 5vw;
     }
 
     .innovations-title span {
@@ -727,7 +742,7 @@
 }
 
 
-@media (max-width: 1023px) {
+@media screen and (max-width: 1023px) {
     .desktop-view {
         display: none;
     }
@@ -737,7 +752,7 @@
     }
 
     body {
-        background-color: rgb(218, 255, 234);
+        background-color: rgba(0, 255, 110, 0.1);
         margin: 0;
         padding: 0;
     }
@@ -805,7 +820,6 @@
         text-align: center;
     }
 
-    /* Philippine Goals Section */
     .philippine-goals-header {
         background-image: url("../res/images/mobile-land-goal-header.png");
         margin-top: 30px;
@@ -846,18 +860,18 @@
 
     .projects-container {
         margin: 0;
-        height: 33vh;
+        height: 50vw;
     }
 
     .projects-captions h1 {
         text-shadow: 5px 3px rgba(0, 0, 0, 0.3);
         margin-left: 0;
-        font-size: 30px;
+        font-size: 4vw;
     }
 
     .projects-captions p {
         text-shadow: 1px 1px rgba(0, 0, 0, 0.3);
-        font-size: 18px;
+        font-size: 2vw;
         padding-left: 0;
         margin-top: 20px;
     }
@@ -955,7 +969,7 @@
     }
 }
 
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
 
     .problems-container {
         padding: 0;
@@ -970,12 +984,37 @@
         margin: 5%;
     }
 
+    .problems-header h2 {
+        font-size: 10vw;
+    }
+
+    .problems-captions h2 {
+        font-size: 8vw;
+    }
+
+    .philippine-goals-header h2 {
+        font-size: 10vw;
+    }
+
     .projects-container {
         height: 100vh;
     }
 
     .projects-captions h1 {
-        padding-top: 20vh;
+        padding-top: 10vh;
+        font-size: 10vw;
+    }
+
+    .projects-captions p {
+        font-size: 4vw;
+    }
+
+    .projects-captions a p {
+        margin-left: 0;
+    }
+
+    .innovations-title h2 {
+        font-size: 10vw;
     }
 
     .footer-container {
