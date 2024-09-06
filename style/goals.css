@@ -141,7 +141,7 @@
 @media screen and (max-width: 1023px) {
     @font-face {
         font-family: 'Poppins';
-        src: url("../res/fonts/Poppins-Regular.ttf");
+        src: url("assets/fonts/Poppins-Regular.ttf");
     }
 
     .desktop-view {

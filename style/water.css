@@ -211,7 +211,7 @@
 }
 
 .philippine-goals-header {
-    background-image: url("../res/images/water-goal-header.jpeg");
+    background-image: url("assets/images/water-goal-header.jpeg");
     background-size: cover;
     background-position: center;
     height: 180px;
@@ -523,56 +523,56 @@
 }
 
 .book-flip:nth-child(1) .cover-page {
-    background-image: url(../res/images/water-innovasea-image.png);
+    background-image: url("assets/images/water-innovasea-image.png");
     background-size: cover;
     background-position: center;
 }
 
 .book-flip:nth-child(2) .cover-page {
-    background-image: url(../res/images/water-upstreamtech-image.png);
+    background-image: url("assets/images/water-upstreamtech-image.png");
     background-size: cover;
     background-position: center;
 }
 
 .book-flip:nth-child(3) .cover-page {
-    background-image: url(../res/images/water-shellcatch-image.png);
+    background-image: url("assets/images/water-shellcatch-image.png");
     background-size: cover;
     background-position: center;
 }
 
 .book-flip:nth-child(4) .cover-page {
-    background-image: url(../res/images/water-ashored-image.png);
+    background-image: url("assets/images/water-ashored-image.png");
     background-size: cover;
     background-position: center;
 }
 
 .book-flip:nth-child(5) .cover-page {
-    background-image: url(../res/images/water-xpertsea-image.png);
+    background-image: url("assets/images/water-xpertsea-image.png");
     background-size: cover;
     background-position: center;
 }
 
 .book-flip:nth-child(6) .cover-page {
-    background-image: url(../res/images/water-knipbi-image.png);
+    background-image: url("assets/images/water-knipbi-image.png");
     background-size: cover;
     background-position: center;
 }
 
 .book-flip:nth-child(7) .cover-page {
-    background-image: url(../res/images/water-monitorfish-image.png);
+    background-image: url("assets/images/water-monitorfish-image.png");
     background-size: cover;
     background-position: center;
 }
 
 .book-flip:nth-child(8) .cover-page {
-    background-image: url(../res/images/water-seakura-image.png);
+    background-image: url("assets/images/water-seakura-image.png");
     background-size: cover;
     background-position: center;
 }
 
 /* Footer */
 .footer-container {
-    background-image: url(../res/images/water-footer.png);
+    background-image: url("assets/images/water-footer.png");
     color: white;
     padding: 40px 20px;
     display: flex;
@@ -671,7 +671,7 @@
 
     @font-face {
         font-family: 'Poppins';
-        src: url(../res/fonts/Poppins-Regular.ttf);
+        src: url("assets/fonts/Poppins-Regular.ttf");
     }
 
     * {
@@ -821,7 +821,7 @@
     }
 
     .philippine-goals-header {
-        background-image: url("../res/images/Mobile-Phil-goalsHeader.jpg");
+        background-image: url("assets/images/Mobile-Phil-goalsHeader.jpg");
     }
 
     .philippine-goals-header h2 {
@@ -895,35 +895,35 @@
     }
 
     .book-flip:nth-child(1) .cover-page {
-        background-image: url("../res/images/cartoon-water-innovasea-image.png");
+        background-image: url("assets/images/cartoon-water-innovasea-image.png");
     }
 
     .book-flip:nth-child(2) .cover-page {
-        background-image: url("../res/images/cartoon-water-upstreamtech-image.png");
+        background-image: url("assets/images/cartoon-water-upstreamtech-image.png");
     }
 
     .book-flip:nth-child(3) .cover-page {
-        background-image: url("../res/images/cartoon-water-shellcatch-image.png");
+        background-image: url("assets/images/cartoon-water-shellcatch-image.png");
     }
 
     .book-flip:nth-child(4) .cover-page {
-        background-image: url("../res/images/cartoon-water-ashored-image.png");
+        background-image: url("assets/images/cartoon-water-ashored-image.png");
     }
 
     .book-flip:nth-child(5) .cover-page {
-        background-image: url("../res/images/cartoon-water-xpertsea-image.png");
+        background-image: url("assets/images/cartoon-water-xpertsea-image.png");
     }
 
     .book-flip:nth-child(6) .cover-page {
-        background-image: url("../res/images/cartoon-water-knipbi-image.png");
+        background-image: url("assets/images/cartoon-water-knipbi-image.png");
     }
 
     .book-flip:nth-child(7) .cover-page {
-        background-image: url("../res/images/cartoon-water-monitorfish-image.png");
+        background-image: url("assets/images/cartoon-water-monitorfish-image.png");
     }
 
     .book-flip:nth-child(8) .cover-page {
-        background-image: url("../res/images/cartoon-water-seakura-image.png");
+        background-image: url("assets/images/cartoon-water-seakura-image.png");
     }
 
     .footer-container {

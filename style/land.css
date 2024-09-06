@@ -211,7 +211,7 @@
 }
 
 .philippine-goals-header {
-    background-image: url(../res/images/land-goal-header.jpg);
+    background-image: url("assets/images/land-goal-header.jpg");
     background-size: cover;
     background-position: center;
     height: 180px;
@@ -519,55 +519,55 @@
 }
 
 .book-flip:nth-child(1) .cover-page {
-    background-image: url("../res/images/land-landlife-image.png");
+    background-image: url("assets/images/land-landlife-image.png");
     background-size: cover;
     background-position: center;
 }
 
 .book-flip:nth-child(2) .cover-page {
-    background-image: url("../res/images/land-ayalawater-image.png");
+    background-image: url("assets/images/land-ayalawater-image.png");
     background-size: cover;
     background-position: center;
 }
 
 .book-flip:nth-child(3) .cover-page {
-    background-image: url("../res/images/land-ekogrid-image.png");
+    background-image: url("assets/images/land-ekogrid-image.png");
     background-size: cover;
     background-position: center;
 }
 
 .book-flip:nth-child(4) .cover-page {
-    background-image: url("../res/images/land-rainforest-image.png");
+    background-image: url("assets/images/land-rainforest-image.png");
     background-size: cover;
     background-position: center;
 }
 
 .book-flip:nth-child(5) .cover-page {
-    background-image: url("../res/images/land-vestaron-image.png");
+    background-image: url("assets/images/land-vestaron-image.png");
     background-size: cover;
     background-position: center;
 }
 
 .book-flip:nth-child(6) .cover-page {
-    background-image: url("../res/images/land-covercress-image.png");
+    background-image: url("assets/images/land-covercress-image.png");
     background-size: cover;
     background-position: center;
 }
 
 .book-flip:nth-child(7) .cover-page {
-    background-image: url("../res/images/land-tesselo-image.png");
+    background-image: url("assets/images/land-tesselo-image.png");
     background-size: cover;
     background-position: center;
 }
 
 .book-flip:nth-child(8) .cover-page {
-    background-image: url("../res/images/land-dendra-image.png");
+    background-image: url("assets/images/land-dendra-image.png");
     background-size: cover;
     background-position: center;
 }
 
 .footer-container {
-    background-image: url("../res/images/land-footer.png");
+    background-image: url("assets/images/land-footer.png");
     color: white;
     padding: 40px 20px;
     display: flex;
@@ -666,7 +666,7 @@
 
     @font-face {
         font-family: 'Poppins';
-        src: url("../res/fonts/Poppins-Regular.ttf");
+        src: url("assets/fonts/Poppins-Regular.ttf");
     }
 
     * {
@@ -821,7 +821,7 @@
     }
 
     .philippine-goals-header {
-        background-image: url("../res/images/mobile-land-goal-header.png");
+        background-image: url("assets/images/mobile-land-goal-header.png");
         margin-top: 30px;
         height: 350px;
         display: flex;
@@ -898,35 +898,35 @@
     }
 
     .book-flip:nth-child(1) .cover-page {
-        background-image: url("../res/images/cartoon-land-landlife-image.png");
+        background-image: url("assets/images/cartoon-land-landlife-image.png");
     }
 
     .book-flip:nth-child(2) .cover-page {
-        background-image: url("../res/images/cartoon-land-ayala-image.png");
+        background-image: url("assets/images/cartoon-land-ayala-image.png");
     }
 
     .book-flip:nth-child(3) .cover-page {
-        background-image: url("../res/images/cartoon-land-ekogrid-image.png");
+        background-image: url("assets/images/cartoon-land-ekogrid-image.png");
     }
 
     .book-flip:nth-child(4) .cover-page {
-        background-image: url("../res/images/cartoon-land-rainforest-image.png");
+        background-image: url("assets/images/cartoon-land-rainforest-image.png");
     }
 
     .book-flip:nth-child(5) .cover-page {
-        background-image: url("../res/images/cartoon-land-vestaron-image.png");
+        background-image: url("assets/images/cartoon-land-vestaron-image.png");
     }
 
     .book-flip:nth-child(6) .cover-page {
-        background-image: url("../res/images/cartoon-land-covercress-image.png");
+        background-image: url("assets/images/cartoon-land-covercress-image.png");
     }
 
     .book-flip:nth-child(7) .cover-page {
-        background-image: url("../res/images/cartoon-land-tesselo-image.png");
+        background-image: url("assets/images/cartoon-land-tesselo-image.png");
     }
 
     .book-flip:nth-child(8) .cover-page {
-        background-image: url("../res/images/cartoon-land-dendra-image.png");
+        background-image: url("assets/images/cartoon-land-dendra-image.png");
     }
 
     .footer-container {
