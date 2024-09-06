@@ -87,7 +87,7 @@
     max-width: 900px;
     padding: 20px;
     margin: 0 auto;
-    top: 30%;
+    top: 20vh;
     left: 50%;
     transform: translateX(-50%);
     position: absolute;
@@ -95,19 +95,19 @@
 }
 
 .header-mainText {
-    font-size: 120px;
+    font-size: 8.5vw;
     font-weight: bold;
     margin-bottom: 5px;
 }
 
 .header-subText {
-    font-size: 50px;
+    font-size: 3vw;
     margin-bottom: 10px;
     letter-spacing: 5px;
 }
 
 .header-description {
-    font-size: 30px;
+    font-size: 1.5vw;
     line-height: 1.5;
 }
 
@@ -154,7 +154,7 @@
 }
 
 .problems-header h2 {
-    font-size: 50px;
+    font-size: 4vw;
     width: 100%;
     text-align: center;
     line-height: 0.1em;
@@ -187,7 +187,7 @@
 
 .problems-captions h2 {
     text-align: center;
-    font-size: 45px;
+    font-size: 3.5vw;
     padding: 10px 30px;
     margin-top: 50px;
 }
@@ -197,7 +197,7 @@
 }
 
 .problems-captions p {
-    font-size: 32px;
+    font-size: 2vw;
     padding: 30px 30px;
     text-align: center;
     padding: 20px;
@@ -224,7 +224,7 @@
 
 .philippine-goals-header h2 {
     color: white;
-    font-size: 60px;
+    font-size: 4vw;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     text-transform: uppercase;
     letter-spacing: 5px;
@@ -329,7 +329,7 @@
 .projects-header h2 {
     color: #186423;
     text-align: center;
-    font-size: 45px;
+    font-size: 3vw;
     margin-top: 70px;
 }
 
@@ -352,14 +352,14 @@
 }
 
 .projects-captions h1 {
-    font-size: 60px;
+    font-size: 3.5vw;
     margin-top: 10px;
     margin-left: 10px;
 }
 
 .projects-captions p {
     padding-left: 50px;
-    font-size: 30px;
+    font-size: 1.5vw;
     margin-top: 20px;
 }
 
@@ -439,7 +439,7 @@
 }
 
 .innovations-title h2 {
-    font-size: 50px;
+    font-size: 4vw;
     width: 100%;
     text-align: center;
     line-height: 0.1em;
@@ -448,7 +448,7 @@
 }
 
 .innovations-title span {
-    padding: 0 100px;
+    padding: 0 3.3vw;
 }
 
 .innovations-title h2::before,
