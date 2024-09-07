@@ -184,7 +184,7 @@
     margin-top: 10px;
 }
 
-.problems-captions h2 {
+.problems-captions h3 {
     text-align: center;
     font-size: 3.5vw;
     padding: 10px 30px;
@@ -350,7 +350,7 @@
     padding: 30px;
 }
 
-.projects-captions h1 {
+.projects-captions h3 {
     font-size: 3.85vw;
     margin-top: 10px;
     margin-left: 10px;
@@ -711,7 +711,7 @@
         top: 10%;
     }
 
-    .projects-captions h1 {
+    .projects-captions h3 {
         font-size: 3vw;
     }
 
@@ -805,7 +805,7 @@
         margin: auto;
     }
 
-    .problems-captions h2 {
+    .problems-captions h3 {
         text-align: center;
         font-size: 35px;
         margin-top: 20px;
@@ -860,7 +860,7 @@
         height: 55vh;
     }
 
-    .projects-captions h1 {
+    .projects-captions h3 {
         text-shadow: 5px 3px rgba(0, 0, 0, 0.3);
         margin-left: 0;
         font-size: 3.8vw;
@@ -989,7 +989,7 @@
         height: 100vh;
     }
 
-    .projects-captions h1 {
+    .projects-captions h3 {
         font-size: 8vw;
     }
 

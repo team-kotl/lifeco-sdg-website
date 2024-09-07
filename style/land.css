@@ -184,7 +184,7 @@
     margin-top: 10px;
 }
 
-.problems-captions h2 {
+.problems-captions h3 {
     text-align: center;
     font-size: 3.5vw;
     padding: 10px 30px;
@@ -350,7 +350,7 @@
     padding: 30px;
 }
 
-.projects-captions h1 {
+.projects-captions h3 {
     font-size: 3.5vw;
     margin-top: 10px;
     margin-left: 10px;
@@ -706,7 +706,7 @@
         font-size: 5vw;
     }
 
-    .projects-captions h1 {
+    .projects-captions h3 {
         font-size: 7vh;
     }
 
@@ -805,7 +805,7 @@
         margin: auto;
     }
 
-    .problems-captions h2 {
+    .problems-captions h3 {
         text-align: center;
         font-size: 35px;
         margin-top: 20px;
@@ -863,7 +863,7 @@
         height: 50vw;
     }
 
-    .projects-captions h1 {
+    .projects-captions h3 {
         text-shadow: 5px 3px rgba(0, 0, 0, 0.3);
         margin-left: 0;
         font-size: 4vw;
@@ -988,10 +988,6 @@
         font-size: 10vw;
     }
 
-    .problems-captions h2 {
-        font-size: 8vw;
-    }
-
     .philippine-goals-header h2 {
         font-size: 10vw;
     }
@@ -1000,7 +996,7 @@
         height: 100vh;
     }
 
-    .projects-captions h1 {
+    .projects-captions h3 {
         padding-top: 10vh;
         font-size: 10vw;
     }
